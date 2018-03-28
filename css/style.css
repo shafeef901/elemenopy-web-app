@@ -12,6 +12,7 @@
 .icon-block .material-icons {
 	font-size: inherit;
 }
+
 #contact
 {
 	background: linear-gradient(#47ca5e,#555db3 50%);
@@ -50,5 +51,6 @@ body {
   -webkit-transform: translate3d(0, -100%, 0);
           transform: translate3d(0, -100%, 0);
   opacity: 1;
+
 }
 
