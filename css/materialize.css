@@ -3008,6 +3008,47 @@ ul.staggered-list li {
   color:#ffca00 !important;;
 }
 
+#contact
+{
+  background: linear-gradient(#47ca5e,#555db3 50%);
+}
+
+body {
+  background: #ebebeb;
+}
+#map{
+  position: relative;
+}
+.reachus{
+  position: relative;
+  background-color: white;
+  margin: 1%;
+  
+}
+
+.form-group {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.form-control-placeholder {
+  position: absolute;
+  top: 0;
+  padding: 7px 0 0 13px;
+  -webkit-transition: all 200ms;
+  transition: all 200ms;
+  opacity: 0.5;
+}
+
+.form-control:focus + .form-control-placeholder,
+.form-control:valid + .form-control-placeholder {
+  font-size: 75%;
+  -webkit-transform: translate3d(0, -100%, 0);
+          transform: translate3d(0, -100%, 0);
+  opacity: 1;
+
+}
+
 .card{
   padding: 2%;
   margin-left: 2%;
