@@ -2650,7 +2650,7 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-family: 'Rubik', sans-serif;
 }
 
 ul:not(.browser-default) {
@@ -3013,6 +3013,7 @@ ul.staggered-list li {
   background: linear-gradient(#47ca5e,#555db3 50%);
 }
 
+
 body {
   background: #ebebeb;
 }
@@ -3024,6 +3025,11 @@ body {
   background-color: white;
   margin: 1%;
   
+}
+
+.sub-header{
+  float:right;
+  color: white;
 }
 
 .form-group {
@@ -3569,10 +3575,54 @@ table span.badge {
           font-feature-settings: 'liga';
 }
 
+.old{
+  font-size: 1.5em;
+  padding-top: 6%;
+}
+
+.old-container{
+  
+}
+
+@media only screen and (min-width: 601px) {
+  .old {
+    font-size: 4em;
+    line-height: 1em;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  .old {
+    font-size: 4em;
+  }
+}
+
+.illustration{
+  font-size: 1.5em;
+
+}
+
+.illustration-container{
+  padding-top: 6%;
+}
+
+@media only screen and (min-width: 601px) {
+  .illustration {
+    font-size: 4em;
+    line-height: 1em;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  .illustration {
+    font-size: 4em;
+  }
+}
+
 .container {
   margin: 0 auto;
   max-width: 1280px;
-  width: 90%;
+  width: 80%;
 }
 
 @media only screen and (min-width: 601px) {
@@ -4631,7 +4681,7 @@ a {
 
 html {
   line-height: 1.5;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-family: 'Rubik', sans-serif;
   font-weight: normal;
   color: rgba(0, 0, 0, 0.87);
 }
@@ -4654,9 +4704,31 @@ html {
   }
 }
 
+p{
+  font-size: 1.1em;
+  letter-spacing: 0.5px;
+  font-weight: 300;
+}
+
+.subheader{
+  font-weight: 300;
+  padding-top: 5%;
+  font-size: 0.8em;
+  line-height: 0.8em;
+}
+
+.header{
+  padding-top: 10%;
+  font-weight: 500;
+  font-size: 4em;
+  line-height: 1.2em;
+  padding-bottom: 7%; 
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
   line-height: 1.3;
+  font-family: 'Rubik', sans-serif;
 }
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -4883,8 +4955,30 @@ small {
   background-color: #fff;
 }
 
+/* label focus color */
+    .input-field input[type=text]:focus + label, .materialize-textarea:focus:not([readonly]) + label {
+     color: white !important;
+    }
+
+/* label underline focus color */
+    .input-field input[type=text]:focus, .materialize-textarea:focus:not([readonly]) {
+     border-bottom: 1px solid white !important;
+     box-shadow: 0 1px 0 0 white !important;
+    }
+
+
+    .inp{
+       color: white;
+       font-weight: 300;
+    }
+    .lab{
+      color: white;
+      font-weight: bold;
+    }
+
 .card {
   position: relative;
+  padding: 2% 8% 2% 8%;
   margin: 0.5rem 0 1rem 0;
   background-color: #fff;
   -webkit-transition: -webkit-box-shadow .25s;
