@@ -3634,6 +3634,23 @@ table span.badge {
   }
 }
 
+.about-header{
+  font-size: 3em;
+}
+
+@media only screen and (min-width: 601px) {
+  .about-header {
+    font-size: 4em;
+    line-height: 1em;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  .about-header {
+    font-size: 4em;
+  }
+}
+
 .program-header{
   padding-top: 6%;
   font-size: 1.5em;
@@ -3668,6 +3685,18 @@ table span.badge {
   .container {
     width: 70%;
   }
+}
+
+.about-blue{
+  padding: 10% 0 10% 0;
+}
+
+.profile{
+  padding-top: 7%;
+}
+
+.profile-container{
+  padding-bottom: 10%;
 }
 
 .partnership-container{
