@@ -21,9 +21,28 @@
 body {
   background-color: white;
 }
+
+#map{
+  height: 100%;
+}
+
+@media only screen and (min-width: 601px) {
+  #map {
+    height: 100%;
+    padding-top: 7%;
+    padding-bottom: 7%;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  #map {
+    height: 100%;
+  }
+}
+
 #map {
 		padding-top: 7%;
-        height: 100%;
+        
       }
 .reachus{
 	position: relative;
