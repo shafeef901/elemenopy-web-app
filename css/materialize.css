@@ -3622,7 +3622,7 @@ table span.badge {
 
 @media only screen and (min-width: 601px) {
   .approach-header {
-    padding-top: 3%;
+    padding-top: 6%;
     font-size: 4em;
     line-height: 1em;
   }
@@ -3640,6 +3640,7 @@ table span.badge {
 
 @media only screen and (min-width: 601px) {
   .about-header {
+    padding-top: 6%;
     font-size: 4em;
     line-height: 1em;
   }
@@ -3693,6 +3694,23 @@ table span.badge {
   }
 }
 
+.program-title{
+  font-size: 1.5em;
+}
+
+@media only screen and (min-width: 601px) {
+  .program-title {
+    font-size: 4em;
+    line-height: 1em;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  .program-title {
+    font-size: 4em;
+  }
+}
+
 .contact-header{
   color:#47ca5e;
   padding: 6% 2% 0 2%;
@@ -3701,7 +3719,7 @@ table span.badge {
 
 @media only screen and (min-width: 601px) {
   .contact-header {
-    
+
     font-size: 3.2em;
     line-height: 1em;
   }
@@ -3734,6 +3752,18 @@ table span.badge {
 
 .about-blue{
   padding: 10% 0 10% 0;
+}
+
+@media only screen and (min-width: 601px) {
+  .about-blue {
+    font-size: 2.5em;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  .about-blue {
+    font-size: 2.5em;
+  }
 }
 
 .profile{
@@ -4875,7 +4905,7 @@ p{
 }
 
 .header{
-  padding-top: 10%;
+  padding-top: 8%;
   font-weight: 500;
   font-size: 4em;
   line-height: 1.2em;
