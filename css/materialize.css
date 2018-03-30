@@ -3731,6 +3731,40 @@ table span.badge {
   }
 }
 
+.meh{
+  margin: 2%;
+}
+
+@media only screen and (min-width: 601px) {
+  .meh {
+    margin: 2%;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  .meh {
+    margin: 2%;
+    margin-top: 3%;
+  }
+}
+
+.contact-container {
+  margin: 0 auto;
+  max-width: 1280px;
+  width: 100%;
+}
+
+@media only screen and (min-width: 601px) {
+  .contact-container {
+    width: 90%;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  .contact-container {
+    width: 90%;
+  }
+}
 
 .container {
   margin: 0 auto;
