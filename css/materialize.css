@@ -3651,6 +3651,30 @@ table span.badge {
   }
 }
 
+
+.contact{
+  
+}
+
+.contact{
+  padding-top: 6%;
+  font-size: 1.2em;
+}
+
+@media only screen and (min-width: 601px) {
+  .contact {
+    font-size: 2em;
+    line-height: 1.5em;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  .contact {
+    font-size: 2em;
+    line-height: 1.5em;
+  }
+}
+
 .program-header{
   padding-top: 6%;
   font-size: 1.5em;
@@ -3668,6 +3692,27 @@ table span.badge {
     font-size: 4em;
   }
 }
+
+.contact-header{
+  color:#47ca5e;
+  padding: 6% 2% 0 2%;
+  font-size: 1.5em;
+}
+
+@media only screen and (min-width: 601px) {
+  .contact-header {
+    
+    font-size: 3.2em;
+    line-height: 1em;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  .contact-header {
+    font-size: 3.2em;
+  }
+}
+
 
 .container {
   margin: 0 auto;
