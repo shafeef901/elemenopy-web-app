@@ -3580,10 +3580,6 @@ table span.badge {
   padding-top: 6%;
 }
 
-.old-container{
-  
-}
-
 @media only screen and (min-width: 601px) {
   .old {
     font-size: 4em;
@@ -3619,6 +3615,105 @@ table span.badge {
   }
 }
 
+.approach-header{
+  padding-top: 1%;
+  font-size: 1.5em;
+}
+
+@media only screen and (min-width: 601px) {
+  .approach-header {
+    padding-top: 3%;
+    font-size: 4em;
+    line-height: 1em;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  .approach-header {
+    font-size: 4em;
+  }
+}
+
+.about-header{
+  font-size: 3em;
+}
+
+@media only screen and (min-width: 601px) {
+  .about-header {
+    font-size: 4em;
+    line-height: 1em;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  .about-header {
+    font-size: 4em;
+  }
+}
+
+
+.contact{
+  
+}
+
+.contact{
+  padding-top: 6%;
+  font-size: 1.2em;
+}
+
+@media only screen and (min-width: 601px) {
+  .contact {
+    font-size: 2em;
+    line-height: 1.5em;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  .contact {
+    font-size: 2em;
+    line-height: 1.5em;
+  }
+}
+
+.program-header{
+  padding-top: 6%;
+  font-size: 1.5em;
+}
+
+@media only screen and (min-width: 601px) {
+  .program-header {
+    font-size: 4em;
+    line-height: 1em;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  .program-header {
+    font-size: 4em;
+  }
+}
+
+.contact-header{
+  color:#47ca5e;
+  padding: 6% 2% 0 2%;
+  font-size: 1.5em;
+}
+
+@media only screen and (min-width: 601px) {
+  .contact-header {
+    
+    font-size: 3.2em;
+    line-height: 1em;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  .contact-header {
+    font-size: 3.2em;
+  }
+}
+
+
 .container {
   margin: 0 auto;
   max-width: 1280px;
@@ -3634,6 +3729,65 @@ table span.badge {
 @media only screen and (min-width: 993px) {
   .container {
     width: 70%;
+  }
+}
+
+.about-blue{
+  padding: 10% 0 10% 0;
+}
+
+.profile{
+  padding-top: 7%;
+}
+
+.profile-container{
+  padding-bottom: 10%;
+}
+
+.partnership-container{
+  margin: 0 auto;
+  max-width: 1280px;
+  font-size: 1.5em;
+  width: 80%;
+  line-height: 1em;
+  padding-top: 8%;
+  padding-bottom: 4%;
+}
+
+@media only screen and (min-width: 601px) {
+  .partnership-container {
+    width: 85%;
+    font-size: 4em;
+    line-height: 1em;
+    padding-top: 4%;
+    padding-bottom: 4%;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  .partnership-container {
+    width: 70%;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    font-size: 4em;
+  }
+}
+
+.program-container {
+  margin: 0 auto;
+  max-width: 1280px;
+  width: 100%;
+}
+
+@media only screen and (min-width: 601px) {
+  .program-container {
+    width: 75%;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  .program-container {
+    width: 75%;
   }
 }
 
@@ -4704,9 +4858,12 @@ html {
   }
 }
 
+html{
+  letter-spacing: 0.7px;
+}
+
 p{
   font-size: 1.1em;
-  letter-spacing: 0.5px;
   font-weight: 300;
 }
 
