@@ -13,11 +13,6 @@
 	font-size: inherit;
 }
 
-#contact
-{
-	background: linear-gradient(#47ca5e,#555db3 50%);
-}
-
 body {
   background-color: white;
 }
@@ -44,6 +39,7 @@ body {
 		padding-top: 7%;
         
       }
+      
 .reachus{
 	position: relative;
 	background-color: white;
