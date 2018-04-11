@@ -3,6 +3,7 @@
  * Copyright 2014-2017 Materialize
  * MIT License (https://raw.githubusercontent.com/Dogfalo/materialize/master/LICENSE)
  */
+
 .materialize-red {
   background-color: #e51c23 !important;
 }
@@ -84,11 +85,11 @@
 }
 
 .red {
-  background-color: #ff485a !important;
+  background-color: #F05B65 !important;
 }
 
 .red-text {
-  color: #ff485a !important;
+  color: #F05B65 !important;
 }
 
 .red.lighten-5 {
@@ -648,11 +649,11 @@
 }
 
 .blue {
-  background-color: #555db3 !important;
+  background-color: #5565AF !important;
 }
 
 .blue-text {
-  color: #555db3 !important;
+  color: #5565AF !important;
 }
 
 .blue.lighten-5 {
@@ -1096,11 +1097,11 @@
 }
 
 .green {
-  background-color: #46c65d !important;
+  background-color: #6BBE65 !important;
 }
 
 .green-text {
-  color: #46c65d !important;
+  color: #6BBE65 !important;
 }
 
 .green.lighten-5 {
@@ -1436,11 +1437,11 @@
 }
 
 .yellow {
-  background-color: #ffca00 !important;
+  background-color: #FFC733 !important;
 }
 
 .yellow-text {
-  color: #ffca00 !important;
+  color: #FFC733 !important;
 }
 
 .yellow.lighten-5 {
@@ -2169,11 +2170,11 @@
 }
 
 .orange {
-  background-color: #ff691c !important;
+  background-color: #F37736 !important;
 }
 
 .orange-text {
-  color: #ff691c !important;
+  color: #F37736 !important;
 }
 
 .black-text {
@@ -3091,7 +3092,6 @@ body {
 }
 
 .page-footer {
-  padding-top: 20px;
   color: #fff;
   background: linear-gradient(#ff534b,#ff4d54);
 }
@@ -3576,21 +3576,27 @@ table span.badge {
 }
 
 .old{
-  font-size: 1.5em;
+  font-size: 2.2em;
+  font-weight: 900;
   padding-top: 6%;
 }
 
 @media only screen and (min-width: 601px) {
   .old {
-    font-size: 4em;
+    font-size: 2.8em;
     line-height: 1em;
   }
 }
 
 @media only screen and (min-width: 993px) {
   .old {
-    font-size: 4em;
+    font-size: 2.8em;
   }
+}
+
+
+.seek{
+  background-image: url('images/approach_web.jpg');
 }
 
 .illustration{
@@ -3600,6 +3606,17 @@ table span.badge {
 
 .illustration-container{
   padding-top: 6%;
+  font-size: 1.2em;
+}
+
+.home-container{
+  font-weight: 900;
+  font-size: 1.6em;
+}
+
+@font-face {
+    font-family: Mikado;
+    src: url('fonts/Mikado.otf');
 }
 
 @media only screen and (min-width: 601px) {
@@ -3616,30 +3633,35 @@ table span.badge {
 }
 
 .approach-header{
+  font-family: Mikado;
   padding-top: 1%;
   font-size: 1.5em;
 }
 
 @media only screen and (min-width: 601px) {
   .approach-header {
+    font-family: Mikado;
     padding-top: 6%;
-    font-size: 4em;
+    font-size: 3em;
     line-height: 1em;
   }
 }
 
 @media only screen and (min-width: 993px) {
   .approach-header {
-    font-size: 4em;
+    font-family: Mikado;
+    font-size: 3em;
   }
 }
 
 .about-header{
+  font-family: Mikado;
   font-size: 3em;
 }
 
 @media only screen and (min-width: 601px) {
   .about-header {
+    font-family: Mikado;
     padding-top: 6%;
     font-size: 4em;
     line-height: 1em;
@@ -3648,6 +3670,7 @@ table span.badge {
 
 @media only screen and (min-width: 993px) {
   .about-header {
+    font-family: Mikado;
     font-size: 4em;
   }
 }
@@ -3664,32 +3687,110 @@ table span.badge {
 
 @media only screen and (min-width: 601px) {
   .contact {
-    font-size: 2em;
+    font-size: 1.3em;
     line-height: 1.5em;
   }
 }
 
 @media only screen and (min-width: 993px) {
   .contact {
-    font-size: 2em;
+    font-size: 1.3em;
     line-height: 1.5em;
   }
 }
 
+
+.seek-desktop{
+  display: none;
+}
+
+@media only screen and (min-width: 601px) {
+  .seek-desktop {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  .seek-desktop {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  .my-seek-desk {
+    padding: 0;
+    display: block;
+    margin: 0 auto;
+    max-height: 100%;
+    max-width: 100%;
+  }
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.my-seek{
+    padding: 0;
+    display: block;
+    margin: 0 auto;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+@media only screen and (min-width: 601px) {
+  .seek-mob {
+    
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  .seek-mob {
+    display: none;
+  }
+}
+
+
 .program-header{
+  font-family: Rubik;
   padding-top: 6%;
   font-size: 1.5em;
 }
 
 @media only screen and (min-width: 601px) {
   .program-header {
-    font-size: 4em;
+    font-family: Rubik;
+    font-size: 2.8em;
     line-height: 1em;
   }
 }
 
 @media only screen and (min-width: 993px) {
   .program-header {
+    font-family: Rubik;
+    font-size: 2.8em;
+  }
+}
+
+.form-header{
+  font-family: Mikado;
+  padding-top: 6%;
+  font-size: 1.5em;
+}
+
+@media only screen and (min-width: 601px) {
+  .form-header {
+    font-family: Mikado;
+    font-size: 4em;
+    line-height: 1em;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  .form-header {
+    font-family: Mikado;
     font-size: 4em;
   }
 }
@@ -3700,18 +3801,20 @@ table span.badge {
 
 @media only screen and (min-width: 601px) {
   .program-title {
-    font-size: 4em;
+    font-size: 3em;
+    padding-top: 5%;
     line-height: 1em;
   }
 }
 
 @media only screen and (min-width: 993px) {
   .program-title {
-    font-size: 4em;
+    font-size: 3em;
   }
 }
 
 .contact-header{
+  font-family: Mikado;
   color:#47ca5e;
   padding: 6% 2% 0 2%;
   font-size: 1.5em;
@@ -3719,15 +3822,16 @@ table span.badge {
 
 @media only screen and (min-width: 601px) {
   .contact-header {
-
-    font-size: 3.2em;
+    font-family: Mikado;
+    font-size: 1.8em;
     line-height: 1em;
   }
 }
 
 @media only screen and (min-width: 993px) {
   .contact-header {
-    font-size: 3.2em;
+    font-family: Mikado;
+    font-size: 1.8em;
   }
 }
 
@@ -3745,6 +3849,28 @@ table span.badge {
   .meh {
     margin: 2%;
     margin-top: 3%;
+  }
+}
+
+.mikado{
+  font-family: Mikado;
+}
+
+.approach-container {
+  margin: 0 auto;
+  max-width: 1280px;
+  width: 100%;
+}
+
+@media only screen and (min-width: 601px) {
+  .approach-container {
+    width: 90%;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  .approach-container {
+    width: 90%;
   }
 }
 
@@ -3769,7 +3895,7 @@ table span.badge {
 .container {
   margin: 0 auto;
   max-width: 1280px;
-  width: 80%;
+  width: 85%;
 }
 
 @media only screen and (min-width: 601px) {
@@ -3808,10 +3934,12 @@ table span.badge {
   padding-bottom: 10%;
 }
 
+.rubik{
+  font-family: Rubik;
+}
+
 .partnership-container{
   margin: 0 auto;
-  max-width: 1280px;
-  font-size: 1.5em;
   width: 80%;
   line-height: 1em;
   padding-top: 8%;
@@ -3820,8 +3948,7 @@ table span.badge {
 
 @media only screen and (min-width: 601px) {
   .partnership-container {
-    width: 85%;
-    font-size: 4em;
+    width: 90%;
     line-height: 1em;
     padding-top: 4%;
     padding-bottom: 4%;
@@ -3830,10 +3957,9 @@ table span.badge {
 
 @media only screen and (min-width: 993px) {
   .partnership-container {
-    width: 70%;
+    width: 75%;
     padding-top: 4%;
     padding-bottom: 4%;
-    font-size: 4em;
   }
 }
 
@@ -4714,6 +4840,7 @@ nav i.material-icons {
 }
 
 nav .nav-wrapper {
+  font-family: Mikado;
   position: relative;
   height: 100%;
 }
@@ -4775,6 +4902,7 @@ nav .brand-logo.right {
   right: 0.5rem;
   padding: 0;
 }
+
 
 nav .brand-logo i,
 nav .brand-logo [class^="mdi-"], nav .brand-logo [class*="mdi-"],
@@ -4926,16 +5054,24 @@ html{
   letter-spacing: 0.7px;
 }
 
+.gen{
+  padding-bottom: 4%;
+}
+
 p{
   font-size: 1.1em;
   font-weight: 300;
 }
 
+.bleh{
+  font-size: 1.5em;
+  font-weight: 300;
+}
+
 .subheader{
   font-weight: 300;
-  padding-top: 5%;
-  font-size: 0.8em;
-  line-height: 0.8em;
+  line-height: 0;
+  font-size: 0.4em;
 }
 
 .header{
@@ -4943,7 +5079,7 @@ p{
   font-weight: 500;
   font-size: 4em;
   line-height: 1.2em;
-  padding-bottom: 7%; 
+  padding-bottom: 3%; 
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -5208,6 +5344,48 @@ small {
   transition: box-shadow .25s, -webkit-box-shadow .25s;
   border-radius: 2px;
 }
+
+.home-card {
+  position: relative;
+  font-size: 0.9em;
+  padding: 4% 8% 2% 8%;
+  margin: 0.5rem 0rem 0 0rem;
+  background-color: #fff;
+  -webkit-transition: -webkit-box-shadow .25s;
+  transition: -webkit-box-shadow .25s;
+  transition: box-shadow .25s;
+  transition: box-shadow .25s, -webkit-box-shadow .25s;
+  border-radius: 2px;
+}
+
+@media only screen and (min-width: 601px) {
+  .home-card {
+  position: relative;
+  padding: 4% 4% 2% 4%;
+  margin: 0.5rem 8rem 0 8rem;
+  background-color: #fff;
+  -webkit-transition: -webkit-box-shadow .25s;
+  transition: -webkit-box-shadow .25s;
+  transition: box-shadow .25s;
+  transition: box-shadow .25s, -webkit-box-shadow .25s;
+  border-radius: 2px;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  .home-card {
+    position: relative;
+  padding: 4% 4% 2% 4%;
+  margin: 0.5rem 8rem 0 8rem;
+  background-color: #fff;
+  -webkit-transition: -webkit-box-shadow .25s;
+  transition: -webkit-box-shadow .25s;
+  transition: box-shadow .25s;
+  transition: box-shadow .25s, -webkit-box-shadow .25s;
+  border-radius: 2px;
+  }
+}
+
 
 .card .card-title {
   font-size: 24px;
@@ -8577,6 +8755,10 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
   height: 100%;
   overflow: hidden;
   border-color: inherit;
+}
+
+.home-text{
+  font-size: 1.3em;
 }
 
 .circle-clipper .circle {
