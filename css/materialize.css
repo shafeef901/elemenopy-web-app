@@ -5066,6 +5066,7 @@ html{
 
 .gen{
   padding-bottom: 4%;
+  line-height: 20px;
 }
 
 p{
@@ -5074,7 +5075,7 @@ p{
 }
 
 .bleh{
-  font-size: 1.5em;
+  font-size: 1.3em;
   font-weight: 300;
 }
 
@@ -5087,9 +5088,29 @@ p{
 .header{
   padding-top: 8%;
   font-weight: 500;
-  font-size: 4em;
+  font-size: 2em;
   line-height: 1.2em;
   padding-bottom: 3%; 
+}
+
+@media only screen and (min-width: 601px) {
+  .header {
+  padding-top: 8%;
+  font-weight: 500;
+  font-size: 3.7em;
+  line-height: 1.2em;
+  padding-bottom: 3%;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  .header {
+  padding-top: 8%;
+  font-weight: 500;
+  font-size: 3.7em;
+  line-height: 1.2em;
+  padding-bottom: 3%;
+  }
 }
 
 h1, h2, h3, h4, h5, h6 {
