@@ -5008,6 +5008,16 @@ nav .input-field label.active i {
   position: fixed;
 }
 
+.hamburger{
+    width: 30px;
+    position: relative;
+    top:21%;
+
+    height: 4px;
+    margin: 5px 0;
+    border-radius: 20%;
+}
+
 @media only screen and (min-width: 601px) {
   nav.nav-extended .nav-wrapper {
     min-height: 64px;
@@ -5056,6 +5066,7 @@ html{
 
 .gen{
   padding-bottom: 4%;
+  line-height: 20px;
 }
 
 p{
@@ -5064,7 +5075,7 @@ p{
 }
 
 .bleh{
-  font-size: 1.5em;
+  font-size: 1.3em;
   font-weight: 300;
 }
 
@@ -5077,9 +5088,29 @@ p{
 .header{
   padding-top: 8%;
   font-weight: 500;
-  font-size: 4em;
+  font-size: 2em;
   line-height: 1.2em;
   padding-bottom: 3%; 
+}
+
+@media only screen and (min-width: 601px) {
+  .header {
+  padding-top: 8%;
+  font-weight: 500;
+  font-size: 3.7em;
+  line-height: 1.2em;
+  padding-bottom: 3%;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  .header {
+  padding-top: 8%;
+  font-weight: 500;
+  font-size: 3.7em;
+  line-height: 1.2em;
+  padding-bottom: 3%;
+  }
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -8360,7 +8391,7 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
   opacity: 0;
   height: 120vh;
   background-color: rgba(0, 0, 0, 0.5);
-  z-index: 997;
+  z-index: 1;
   display: none;
 }
 

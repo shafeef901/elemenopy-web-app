@@ -54,8 +54,8 @@ body {
 .program-subtitle {
 	font-size: 1.2em;
 }
+ 
 
-#carousell{
-  top: 30%;
-  left: 1%;
+[data-collapse] {
+  display:none
 }

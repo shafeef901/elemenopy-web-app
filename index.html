@@ -8,34 +8,41 @@
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/css?family=Rubik:300,500" rel="stylesheet">
   <link href="css/animate.css" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/set.css" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>
-  <nav class="white" role="navigation">
-    <div class="nav-wrapper container"><a href="index.html" id="logo-container" href="#" class="brand-logo"><span class="yellow-text">EL</span><span class="green-text">EM</span><span class="orange-text">EN</span><span class="red-text">O</span><span class="blue-text">PY</span></a>
-      <ul class="right hide-on-med-and-down">
-        <li><a style="font-size: 1.2em;" class="blue-text" href="about.html">ABOUT US</a></li>
-        <li><a style="font-size: 1.2em;" class="yellow-text" href="approach.html">OUR APPROACH</a></li>
-        <li><a style="font-size: 1.2em;" class="red-text" href="programs.html">PROGRAMMES</a></li>
-        <li><a style="font-size: 1.2em;" class="green-text" href="contact.html">CONTACT US</a></li>     
-      </ul> 
-      <ul id="nav-mobile" class="sidenav">
-        <li><a class="blue-text" href="about.html">ABOUT US</a></li>
-        <li><a class="yellow-text" href="approach.html">OUR APPROACH</a></li>
-        <li><a class="red-text" href="programs.html">PROGRAMMES</a></li>
-        <li><a class="green-text" href="contact.html">CONTACT US</a></li>
-      </ul>
-      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-    </div>
-  </nav>
+  <div class="navbar-fixed">
+    <nav class="white" role="navigation">
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><div class="hamburger red"></div><div class="hamburger blue"></div><div class="hamburger green"></div></a>
+      <div class="nav-wrapper container"><a href="index.html" id="logo-container" href="#" class="brand-logo"><span class="yellow-text">EL</span><span class="green-text">EM</span><span class="orange-text">EN</span><span class="red-text">O</span><span class="blue-text">PY</span></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a style="font-size: 1.2em;" class="blue-text" href="about.html">ABOUT US</a></li>
+          <li><a style="font-size: 1.2em;" class="yellow-text" href="approach.html">OUR APPROACH</a></li>
+          <li><a style="font-size: 1.2em;" class="red-text" href="programs.html">PROGRAMMES</a></li>
+          <li><a style="font-size: 1.2em;" class="green-text" href="contact.html">CONTACT US</a></li>     
+        </ul> 
+        <ul id="nav-mobile" class="sidenav">
+          <li style="padding-top: 30%;"><a style="font-size: 1.8em;" class="orange-text" href="index.html">HOME</a></li>
+          <li><a style="font-size: 1.8em;" class="blue-text" href="about.html">ABOUT US</a></li>
+          <li><a style="font-size: 1.8em;" class="yellow-text" href="approach.html">OUR APPROACH</a></li>
+          <li><a style="font-size: 1.8em;" class="red-text" href="programs.html">PROGRAMMES</a></li>
+          <li><a style="font-size: 1.8em;" class="green-text" href="contact.html">CONTACT US</a></li>
+          <br>
+          <img class="my-seek" src="images/logo.png" /> 
+        </ul>
+
+      </div>
+    </nav>
+  </div>
   <div class="orange">
     <div class="section no-pad-bot" id="index-banner">
       <div class="container">
-        <div class="header white-text">Children must be taught how to think and not what to think</div>
+        <div class="header white-text">Children must be taught how to think not what to think</div>
         <div class="gen">
-          <span class="bleh white-text"><strong>Margaret Mead,</strong></span><br><span class="bleh white-text">Cultural Anthropologist.</span>
+          <span class="bleh white-text"><strong>Margaret Mead,</strong><br>Cultural Anthropologist.</span>
         </div>
       </div>
       <div style="padding-bottom: 5%;margin-bottom: 0;">
@@ -169,6 +176,11 @@
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script><script>new WOW().init();</script>
+  <script type="text/javascript">
+     $(document).ready(function(){
+    $('.sidenav').sidenav();
+  });
+  </script>
 
   </body>
 </html>
