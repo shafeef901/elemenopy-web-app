@@ -3752,6 +3752,22 @@ html, body {
   }
 }
 
+.right-align1 {
+  text-align: left;
+}
+
+@media only screen and (min-width: 601px) {
+  .right-align1 {
+    text-align: left;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  .right-align1 {
+    text-align: right;
+  }
+}
+
 
 .program-header{
   font-family: Rubik;
@@ -3971,13 +3987,13 @@ html, body {
 
 @media only screen and (min-width: 601px) {
   .program-container {
-    width: 75%;
+    width: 85%;
   }
 }
 
 @media only screen and (min-width: 993px) {
   .program-container {
-    width: 75%;
+    width: 70%;
   }
 }
 
@@ -4953,8 +4969,20 @@ nav ul a.btn > .material-icons, nav ul a.btn-large > .material-icons, nav ul a.b
   line-height: inherit;
 }
 
-nav ul a:hover {
-  background-color: rgba(0, 0, 0, 0.1);
+nav ul .orange-text:hover {
+  border-top: 5px solid #F37736;
+}
+nav ul .red-text:hover {
+  border-top: 5px solid #F05B65;
+}
+nav ul .green-text:hover {
+  border-top: 5px solid #6BBE65;
+}
+nav ul .blue-text:hover {
+  border-top: 5px solid #5565AF;
+}
+nav ul .yellow-text:hover {
+  border-top: 5px solid #FFC733;
 }
 
 nav ul.left {
@@ -5407,7 +5435,7 @@ small {
   .home-card {
     position: relative;
   padding: 4% 4% 2% 4%;
-  margin: 0.5rem 8rem 0 8rem;
+  margin: 0.5rem 10rem 0 10rem;
   background-color: #fff;
   -webkit-transition: -webkit-box-shadow .25s;
   transition: -webkit-box-shadow .25s;
