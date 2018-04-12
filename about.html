@@ -31,41 +31,60 @@
     <div class="section no-pad-bot" id="index-banner">
       <div class="container row">
         <div class="col s10">
-          <h1 class="about-header blue-text">SO, WHO ARE WE?</h1>
-          <p>Simply put, we are a space for discovery and learning; created by experienced educators who believe children need a nurturing yet engaging environment to grow in.<p>
-        </p>
+          <h1 class="about-header blue-text">So who are we</h1>
+            <div class="row">
+              <div class="col s10 l7 xl7">
+              <p>Simply put, we are a space for discovery and learning; created by experienced educators who believe children need a nurturing yet engaging environment to grow in.</p>
           <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
+              </div>
+            </div>
       </div>
     </div>
-
+  <div class="blue">
     <div class="blue white-text">
       <div class="container about-blue">
-        <p>And with growth, comes change. Children are constantly transitioning as they develop, and at Elemenopy, they find themselves in a happy, creative and secure space which prepares them to make these transitions smoothly.</p>
+        <div class="row">
+          <div class="col s10 l7 xl7">
+            <p>And with growth, comes change. Children are constantly transitioning as they develop, and at Elemenopy, they find themselves in a happy, creative and secure space which prepares them to make these transitions smoothly.</p>
+          </div>
+        </div>
       </div>
     </div>
 
     <div class="container profile-container">
-      <h3 class="orange-text program-header"><strong>MARIYAM ABDUL AZEEZ</strong></h3>
-      <p>- started her life as a mom in Jeddah where her husband was settled.</p> 
-      <p>- The lack of good quality education there pushed her to join her son's schools as a teacher. And pursued her Bachelors in education while being a full-time mom and teacher. </p>
-      <p>- Then as her kids grew she progressed to a principal.</p>
-      <p>- and finally, when she felt there was more to offer to the field of education she set up a school of her own. This was the biggest challenge of it all -in a country where women have very little say in things. </p>
-      <p>- First venture. 25 years ago Little kingdom Preschool. </p>
-      <p>- She currently runs Al Maqased International School and Arwa international School both British curriculum schools in Jeddah.</p>
-      <p>- Her dream to start to bring back her knowledge started off with co-founding  Spring Feld House of children in her town of origin - Thallassery. A purely Montessori school.</p>
+      <div class="card">
+        <div class="row">
+          <div class="col s12 l6 xl6">
+            <p style="text-align: right;"><div id="carousel1" class="carousel carousel-slider">
+              <a class="carousel-item " href="#one!"><img src="images/1.jpg">sgdasdg</a>
+              <a class="carousel-item" href="#two!"><img src="images/2.jpg">asdgasdgs</a>
+              <a class="carousel-item" href="#three!"><img src="images/3.png"></a>
+              <a class="carousel-item" href="#four!"><img src="images/4.jpg"></a>
+              <a class="carousel-item" href="#five!"><img src="images/2.jpg"></a>
+            </div></p>
+          </div>
+          <div class="col s12 l6 xl6">
+            <h3 class="orange-text program-header"><strong>MARIYAM ABDUL AZEEZ</strong></h3>
+            <p>- started her life as a mom in Jeddah where her husband was settled.</p> 
+            <p>- The lack of good quality education there pushed her to join her son's schools as a teacher. And pursued her Bachelors in education while being a full-time mom and teacher. </p>
+            <p>- Then as her kids grew she progressed to a principal.</p>
+            <p>- and finally, when she felt there was more to offer to the field of education she set up a school of her own. This was the biggest challenge of it all -in a country where women have very little say in things. </p>
+            <p>- First venture. 25 years ago Little kingdom Preschool. </p>
+            <p>- She currently runs Al Maqased International School and Arwa international School both British curriculum schools in Jeddah.</p>
+            <p>- Her dream to start to bring back her knowledge started off with co-founding  Spring Feld House of children in her town of origin - Thallassery. A purely Montessori school.</p>
 
-      <p>And back to her hometown Chennai. </p>
+            <p>And back to her hometown Chennai. </p>
+          </div>
+        </div>
 
-    </div>
+      </div>
 
-    <div class="section maroon"></div>
-
-    <div class="container">
+      <div class="card">
         <h1 class="orange-text">TEAM</h1>
         <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+      </div>
     </div>
-
+  </div>
   <footer class="page-footer red">
     <div class="container">
       <div class="program-header">WANT TO WORK WITH US?</div>
@@ -85,6 +104,20 @@
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
+  <script type="text/javascript">
+    var elem = document.querySelector('#carousel1');
+
+
+    var instance = M.Carousel.init(elem);
+
+
+    // Or with jQuery
+
+    $(document).ready(function(){
+      $('.carousel .carousel-slider').carousel();
+      
+    });
+  </script>
 
   </body>
 </html>
