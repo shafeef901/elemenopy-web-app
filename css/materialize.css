@@ -3093,7 +3093,7 @@ body {
 
 .page-footer {
   color: #fff;
-  background: linear-gradient(#ff534b,#ff4d54);
+  
 }
 
 .page-footer .footer-copyright {
@@ -3112,7 +3112,7 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 10px 0px;
-  color: rgba(255, 255, 255, 0.8);
+  
   background-color: rgba(51, 51, 51, 0.08);
 }
 
@@ -3852,7 +3852,8 @@ html, body {
 }
 
 .meh{
-  margin: 2%;
+  margin: 0%;
+
 }
 
 @media only screen and (min-width: 601px) {
@@ -3893,6 +3894,7 @@ html, body {
 .contact-container {
   margin: 0 auto;
   max-width: 1280px;
+  padding: 3%;
   width: 100%;
 }
 
@@ -5433,6 +5435,47 @@ small {
 
 @media only screen and (min-width: 993px) {
   .home-card {
+    position: relative;
+  padding: 4% 4% 2% 4%;
+  margin: 0.5rem 10rem 0 10rem;
+  background-color: #fff;
+  -webkit-transition: -webkit-box-shadow .25s;
+  transition: -webkit-box-shadow .25s;
+  transition: box-shadow .25s;
+  transition: box-shadow .25s, -webkit-box-shadow .25s;
+  border-radius: 2px;
+  }
+}
+
+.contact-card {
+  position: relative;
+  font-size: 0.9em;
+  padding: 4% 8% 2% 8%;
+  margin: 0rem 0rem 0 0rem;
+  background-color: #fff;
+  -webkit-transition: -webkit-box-shadow .25s;
+  transition: -webkit-box-shadow .25s;
+  transition: box-shadow .25s;
+  transition: box-shadow .25s, -webkit-box-shadow .25s;
+  border-radius: 2px;
+}
+
+@media only screen and (min-width: 601px) {
+  .contact-card {
+  position: relative;
+  padding: 4% 4% 2% 4%;
+  margin: 0.5rem 8rem 0 8rem;
+  background-color: #fff;
+  -webkit-transition: -webkit-box-shadow .25s;
+  transition: -webkit-box-shadow .25s;
+  transition: box-shadow .25s;
+  transition: box-shadow .25s, -webkit-box-shadow .25s;
+  border-radius: 2px;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  .contact-card {
     position: relative;
   padding: 4% 4% 2% 4%;
   margin: 0.5rem 10rem 0 10rem;
