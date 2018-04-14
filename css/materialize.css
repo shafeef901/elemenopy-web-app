@@ -3492,7 +3492,6 @@ input[type=range] + .thumb {
 .circle {
   border-radius: 50%;
 }
-
 .center-block {
   display: block;
   margin-left: auto;
@@ -3928,8 +3927,25 @@ html, body {
   }
 }
 
+.about-container {
+  margin: 0 auto;
+  width: 100%;
+}
+
+@media only screen and (min-width: 601px) {
+  .about-container {
+    width: 95%;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  .about-container {
+    width: 85%;
+  }
+}
+
 .about-blue{
-  padding: 4% 0 4% 0;
+  padding: 10% 0 4% 0;
 }
 
 @media only screen and (min-width: 601px) {
@@ -3941,6 +3957,7 @@ html, body {
 @media only screen and (min-width: 993px) {
   .about-blue {
     font-size: 1.2em;
+    padding: 6% 0 4% 0;
   }
 }
 

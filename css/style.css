@@ -43,6 +43,47 @@ body {
     visibility: hidden;
   }
 
+.circ {
+  border-radius: 0%;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+@media only screen and (min-width: 601px) {
+  .circ {
+    border-radius: 0%;
+
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  .circ {
+    border-radius: 50%;
+    height: 400px;
+    width: 400px;
+    position: absolute;
+    top: 15%;
+    left: 60%;
+    z-index: 100;
+  }
+}
+
+.bot-mar {
+  margin-bottom: -8%;
+}
+
+@media only screen and (min-width: 601px) {
+  .bot-mar {
+   margin-bottom: -8%;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  .bot-mar {
+    margin-bottom: 0;
+  }
+}
+
 
 
 @media only screen and (min-width: 601px) {
