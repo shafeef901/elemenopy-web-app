@@ -8,6 +8,7 @@
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/css?family=Rubik:300,500" rel="stylesheet">
    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   <link href="css/animate.css" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
@@ -62,7 +63,12 @@
     <div class="about-container">
       <div class="card">
         <div class="row">
+           <div class="col s12 l6 xl6">
+            <img style="width: 100%;" class="portrait" src="images/kid.jpg">
+          </div>
           <div style="padding-top: 4%;" class="col s12 l6 xl6">
+            <br>
+            <h5 class="orange-text">MARIYAM ABDUL AZEEZ</h5>
             <p class="grey-text">
              What does a mother do when she sees that there is no quality education available for her children?
             </p>
@@ -70,9 +76,7 @@
             </p>
 
           </div>
-          <div class="col s12 l6 xl6">
-            <img style="width: 100%;" class="" src="images/1.jpg">
-          </div>
+         
         </div>
       </div>
       
@@ -111,7 +115,7 @@
                 </p>
               </div>
             </div>
-              <div style="margin-top: 5%;" id="carousel1" class="carousel carousel-slider col s12 l6 xl6">
+              <div style="margin-top: 5%;" id="carousel" class="carousel carousel-slider col s12 l6 xl6">
                 <div class="carousel-fixed-item center middle-indicator">
                  <div class="left">
                   <a href="Previo" class="movePrevCarousel middle-indicator-text waves-effect waves-light content-indicator"><i class="material-icons left  middle-indicator-text">chevron_left</i></a>
@@ -121,7 +125,7 @@
                  <a href="Siguiente" class=" moveNextCarousel middle-indicator-text waves-effect waves-light content-indicator"><i class="material-icons right middle-indicator-text">chevron_right</i></a>
                  </div>
                 </div>
-                <a class="carousel-item " href="#rohini"><img src="images/1.jpg"></a>
+                <a class="carousel-item" href="#rohini"><img src="images/1.jpg"></a>
                 <a class="carousel-item" href="#sujata"><img src="images/2.jpg"></a>
                 <a class="carousel-item" href="#majeeha"><img src="images/3.png"></a>
                 <a class="carousel-item" href="#arthi"><img src="images/4.jpg"></a>
@@ -189,8 +193,9 @@
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script><script>new WOW().init();</script>
   <script type="text/javascript">
-    var elem = document.querySelector('#carousel1');
+    var elem = document.querySelector('#carousel');
 
 
     var instance = M.Carousel.init(elem);
@@ -199,7 +204,9 @@
     // Or with jQuery
 
     $(document).ready(function(){
-      $('.carousel .carousel-slider').carousel();
+      $('.carousel.carousel-slider').carousel({
+    fullWidth: true
+  });
       $('.moveNextCarousel').click(function(e){
         e.preventDefault();
         e.stopPropagation();
@@ -244,9 +251,6 @@
       $(this).removeClass('collapse-open');
       $("[data-collapse="+content_collapse+"]").slideUp(300);
     }
-
-
-
   })
   </script>
   </body>
