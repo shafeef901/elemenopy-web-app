@@ -8,12 +8,17 @@
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/css?family=Rubik:300,500" rel="stylesheet">
   <link href="css/animate.css" rel="stylesheet">
-   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/set.css" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+  <!-- Scripts -->
+  <script src="js/angular.min.js"></script>
+  <script src="js/angular-cookies.min.js"></script> 
+  <script type="text/javascript" src="js/init.js"></script>
 </head>
-<body>
+<body ng-app="homeApp" ng-controller="formCtrl">
   <div class="navbar-fixed">
     <nav class="white" role="navigation">
       <a href="#" data-target="nav-mobile" class="sidenav-trigger"><div class="hamburger red"></div><div class="hamburger yellow"></div><div class="hamburger blue"></div></a>
@@ -39,7 +44,7 @@
   </div>
   <div class="orange">
     <div class="section no-pad-bot" id="index-banner">
-      <div class="container">
+      <div class="container wow fadeInLeft">
         <div class="header white-text">Children must be taught how to think not what to think</div>
         <div class="gen">
           <span class="bleh white-text"><strong>Margaret Mead,</strong><br>Cultural Anthropologist.</span>
@@ -97,7 +102,7 @@
 </div>
   <div class="section orange"></div>
   <div class="container">
-    <h5 class="orange-text old">HOW OLD IS YOUR KID?</h5>
+    <h5 class="orange-text old wow fadeInLeft">HOW OLD IS YOUR KID?</h5>
 
   
     <div class="home-container">
@@ -132,7 +137,7 @@
     </div>
   
   <br><br><br><br>
-  <footer class="page-footer orange">
+  <footer class="page-footer orange" ng-controller="formCtrl">
     <div class="orange">
       <div class="container">
  <br><br>
