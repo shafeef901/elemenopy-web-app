@@ -17,6 +17,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular-cookies.min.js"></script> 
   <script type="text/javascript" src="js/init.js"></script>
+
 </head>
 <body ng-app="homeApp">
   <div class="navbar-fixed">
@@ -102,7 +103,7 @@
 </div>
   <div class="section orange"></div>
   <div class="container">
-    <h5 class="orange-text old wow fadeInLeft">HOW OLD IS YOUR KID?</h5>
+    <h5 class="red-text old wow fadeInLeft mikado">HOW OLD IS YOUR KID?</h5>
 
   
     <div class="home-container">
@@ -131,12 +132,29 @@
           <span style="font-weight: bold;" class="grey-text"><span style="font-weight: bold;" >4.5 years - 5.5 years</span ></span></p>
         </div></a>
       </div>
+      <div class="row no-padding">
+        <div style="float: right;margin-bottom: 5%;">
+          <a href="programs.html" id="download-button" class="btn-large waves-effect waves-light blue">KNOW MORE</a></div>
+        </div>
+      </div>
     </div>
-    <div style="float: right;margin-bottom: 5%;">
-      <a href="programs.html" id="download-button" class="btn-large waves-effect waves-light blue">KNOW MORE</a></div>
+    
+  <div class="section orange"></div>
+  <div class="container" style="padding: 0% 0 3% 0">
+    <h5 class="red-text old wow fadeInLeft mikado" style="padding-bottom: 3%;">A PEEK INTO ELEMENOPY</h5>
+     <iframe src="http://lightwidget.com/widgets/e600d36aefe751b29726cccc6378d968.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
+    <div class="row" style="padding-top: 3%;">
+      <div class="col s12 l10 xl10">
+        <h6 class="grey-text">We're always doing something fun, here at Elemenopy. </h6>
+      </div>
+      <div class="col s12 l2 xl2">
+        <a href="https://www.instagram.com/elemenopy.123/"><img style="float: right;" src="images/fb.png"></a>
+
+        <a href="https://www.facebook.com/elemenopypreschool/"><img style="float: right;padding-right:4%;border-right: 2px solid #a7a7a7" src="images/instagram.png"></a>
+      </div>
     </div>
-  
-  <br><br><br><br>
+  </div>
+
   <footer class="page-footer orange" ng-controller="formCtrl">
     <div class="orange">
       <div class="container">
@@ -206,7 +224,7 @@
 
 
   <!--  Scripts-->
-
+<script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
 <script src="https://www.gstatic.com/firebasejs/4.10.0/firebase.js"></script>
 <script>
   // Initialize Firebase
