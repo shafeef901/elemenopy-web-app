@@ -12,8 +12,13 @@
   <link href="css/animate.css" rel="stylesheet">
   <link href="css/set.css" rel="stylesheet">
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular-cookies.min.js"></script> 
+  <script type="text/javascript" src="js/init.js"></script>
+
 </head>
-<body class="red white-text">
+<body class="red white-text" ng-app="homeApp">
   <div class="navbar-fixed">
     <nav class="white" role="navigation">
       <a href="#" data-target="nav-mobile" class="sidenav-trigger"><div class="hamburger red"></div><div class="hamburger blue"></div><div class="hamburger green"></div></a>
@@ -110,64 +115,80 @@
       </div>
     </div>
   
-  <footer class="page-footer red">
+  <footer class="page-footer red" ng-controller="formCtrl">
     <div class="red">
       <div class="container">
- <br><br>
-     
-        <div class="red white-text">
-          <div class="container about-red">
-            <div class="row">
+
+        <div style="padding-top: 5%;" class="red white-text">
+          <div class="about-red">
+            <div class="row baa">
               <div class="form-header">DROP BY SOON</div><br>
-              <div class="col s12 m12 l6 xl6">
+              <form name="contactForm">
+              <div class="col s12 m12 l5 xl5">
                  <div class="input-field">
-                  <input style="color:white;border: none;border-bottom:1px  solid white;" id="name" type="text" class="validate">
+                  <input style="color:white;border: none;border-bottom:1px  solid white;" required="" id="name" type="text" class="validate" ng-model="p_name" minlength="2">
                   <label style="color: white;font-weight: 300;" for="name">Guardian's Name</label>
                  </div>
                  <div class="input-field">
-                  <input style="color:white;border: none;border-bottom:1px  solid white;" id="number" type="text" class="validate">
-                  <label style="color: white;font-weight: 300;" for="number">Number</label>
+                  <input style="color:white;border: none;border-bottom:1px  solid white;" required="" id="mob" type="number" class="validate" ng-model="mob">
+                  <label style="color: white;font-weight: 300;" for="emailid">Mobile Number</label>
                  </div>
                  <div class="input-field">
-                  <input style="color:white;border: none;border-bottom:1px  solid white;" id="emailid" type="text" class="validate">
+                  <input style="color:white;border: none;border-bottom:1px  solid white;" required="" id="emailid" type="email" class="validate" ng-model="email">
                   <label style="color: white;font-weight: 300;" for="emailid">Email ID</label>
                  </div>
               </div>
-            <div class="col s12 l6 xl6">
-              <div class="input-field">
-               <input style="color:white;border: none;border-bottom:1px  solid white;" id="childname" type="text" class="validate">
-               <label style="color: white;font-weight: 300;" for="childname">Child's Name</label>
+              <div class="mob-hide col l2 xl2 red-text">
+                .
               </div>
-              <div class="input-field">
-               <input style="color:white;border: none;border-bottom:1px  solid white;" id="childage" type="text" class="validate">
-               <label style="color: white;font-weight: 300;" for="childage">Child's Age</label>
+              <div class="col s12 l5 xl5">
+                <div class="input-field">
+                  <input style="color:white;border: none;border-bottom:1px  solid white;" required="" id="c_name" type="text" class="validate" ng-model="c_name">
+                  <label style="color: white;font-weight: 300;" for="c_name">Child Name</label>
+                 </div>
+                <div class="input-field">
+                  <input style="color:white;border: none;border-bottom:1px  solid white;" required="" id="c_age" type="number" class="validate" ng-model="c_age">
+                  <label style="color: white;font-weight: 300;" for="c_age">Child Age</label>
+                 </div>
+                <div class="center">
+                  <button id="download-button" class="btn-large waves-effect waves-light blue" ng-click="clicked()">YES, I'M IN</button>
+                </div>
               </div>
+            </form>
             </div>
-
-             <div class="row center">
-              <a id="download-button" class="btn-large waves-effect waves-light blue">YES, I'M IN</a>
-             </div>
-          </div>
+          
                  <br><br><br>
-            </div>
-            </div>
           </div>
         </div>
       </div>
+    </div>
       <br><br><br>
-      <div class="footer-copyright">
-        <div class="container center">
+    <div class="footer-copyright">
+      <div class="container center">
         Made with ❤ <a class=" white-text text-lighten-3" href="http://accelerate.net.in"> by Accelerate</a>
-        </div>
       </div>
+    </div>
     
   </footer>
 
 
   <!--  Scripts-->
+
+<script src="https://www.gstatic.com/firebasejs/4.10.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDqQLRJH7rtoox8AvVfEUQjgcmMV-zVCkg",
+    authDomain: "elemenopy-web.firebaseapp.com",
+    databaseURL: "https://elemenopy-web.firebaseio.com",
+    projectId: "elemenopy-web",
+    storageBucket: "elemenopy-web.appspot.com",
+    messagingSenderId: "776927140068"
+  };
+  firebase.initializeApp(config);
+</script>
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
-  <script src="js/init.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script><script>new WOW().init();</script>
   <script type="text/javascript">
      $(document).ready(function(){

@@ -33,7 +33,7 @@ body {
    font-size: 4.2rem;
   }
   a.middle-indicator-text{
-    color:black !important;
+    color: #818181 !important;
   }
 .content-indicator{
     width: 64px;
@@ -73,12 +73,12 @@ body {
 }
 
 #carousel {
-  height: 800px;
+  height: 50em;
 }
 
 @media only screen and (min-width: 601px) {
   #carousel {
-   height: 600px;
+   height: 1000px;
   }
 }
 
@@ -104,7 +104,21 @@ body {
   }
 }
 
+.mob-hide {
+  display:none;
+}
 
+@media only screen and (min-width: 601px) {
+  .mob-hide {
+   display: flex;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  .mob-hide {
+    display: flex;
+  }
+}
 
 @media only screen and (min-width: 601px) {
   #map {
@@ -119,6 +133,8 @@ body {
     height: 100%;
   }
 }
+
+
 
 #map {
 		padding-top: 7%;
@@ -139,7 +155,22 @@ body {
 .program-subtitle {
 	font-size: 1.2em;
 }
- 
+
+.baa {
+  margin-right: 0%;
+}
+
+@media only screen and (min-width: 601px) {
+  .baa {
+   margin-right: 20%;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  .baa {
+    margin-right: 20%;
+  }
+} 
 
 [data-collapse] {
   display:none
