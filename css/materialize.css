@@ -4031,7 +4031,7 @@ html, body {
 
 @media only screen and (min-width: 993px) {
   .program-container {
-    width: 70%;
+    width: 75%;
   }
 }
 
@@ -5500,7 +5500,7 @@ small {
   .contact-card {
   position: relative;
   padding: 4% 4% 2% 4%;
-  margin: 0.5rem 8rem 0 8rem;
+  margin: 0rem 0rem 0 0rem;
   background-color: #fff;
   -webkit-transition: -webkit-box-shadow .25s;
   transition: -webkit-box-shadow .25s;
