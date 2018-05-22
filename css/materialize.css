@@ -3875,6 +3875,22 @@ html, body {
   font-family: Mikado;
 }
 
+.carousel-height {
+  max-height: 250px;
+}
+
+@media only screen and (min-width: 601px) {
+  .carousel-height {
+    max-height: 600px;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  . {
+    max-height: 600px;
+  }
+}
+
 .approach-container {
   margin: 0 auto;
   max-width: 1280px;
@@ -5429,7 +5445,7 @@ small {
 .home-card {
   position: relative;
   font-size: 0.9em;
-  padding: 4% 8% 2% 8%;
+  padding: 4% 0% 2% 0%;
   margin: 0.5rem 0rem 0 0rem;
   background-color: #fff;
   -webkit-transition: -webkit-box-shadow .25s;
@@ -5442,7 +5458,7 @@ small {
 @media only screen and (min-width: 601px) {
   .home-card {
   position: relative;
-  padding: 4% 4% 2% 4%;
+  padding: 4% 0% 2% 0%;
   margin: 0.5rem 8rem 0 8rem;
   background-color: #fff;
   -webkit-transition: -webkit-box-shadow .25s;
@@ -5456,7 +5472,7 @@ small {
 @media only screen and (min-width: 993px) {
   .home-card {
     position: relative;
-  padding: 4% 4% 2% 4%;
+  padding: 4% 0% 2% 0%;
   margin: 0.5rem 10rem 0 10rem;
   background-color: #fff;
   -webkit-transition: -webkit-box-shadow .25s;

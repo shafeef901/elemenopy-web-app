@@ -20,7 +20,7 @@
 
 </head>
 <body ng-app="homeApp">
-  <div class="navbar-fixed">
+  <div class="navbar-fixed no-padding">
     <nav class="white" role="navigation">
       <a href="#" data-target="nav-mobile" class="sidenav-trigger"><div class="hamburger red"></div><div class="hamburger yellow"></div><div class="hamburger blue"></div></a>
       <div class="nav-wrapper container"><a href="index.html" id="logo-container" href="#" class="brand-logo"><span class="yellow-text">EL</span><span class="green-text">EM</span><span class="orange-text">EN</span><span class="red-text">O</span><span class="blue-text">PY</span></a>
@@ -43,9 +43,33 @@
       </div>
     </nav>
   </div>
-  <div class="orange">
-    <div class="section no-pad-bot" id="index-banner">
-      <div class="container wow fadeInLeft">
+  <div class="orange no-padding">
+    <div id="carousel" class="carousel-height carousel carousel-slider no-padding">
+      <div class="row no-padding">
+        <div class="col s12 l6 xl6">
+          <a class="carousel-item no-padding">
+            <img src="images/1.jpg">
+          </a>
+        </div>
+        <div class="col s12 l6 xl6 no-padding">
+          <a class="carousel-item no-padding">
+            <img src="images/kid.jpg">
+          </a>
+        </div>
+        <div class="col s12 l6 xl6 v">
+          <a class="carousel-item no-padding">  
+            <img src="images/3.png">
+          </a>
+        </div>
+        <div class="col s12 l6 xl6 no-padding">
+          <a class="carousel-item no-padding">
+            <img src="images/4.jpg">
+          </a>
+        </div>
+      </div>    
+    </div> 
+    
+      <div style="padding-bottom: 2%;" class="container wow fadeInLeft">
         <div class="header white-text">Children must be taught how to think not what to think</div>
         <div class="gen">
           <span class="bleh white-text"><strong>Margaret Mead,</strong><br>Cultural Anthropologist.</span>
@@ -54,22 +78,23 @@
       <div style="padding-bottom: 5%;margin-bottom: 0;">
           <div class="home-card wow fadeInDown">
             <div class="row">
-              <div class="col s12 l6 xl6 home-text">
+              <div class="col s12 l6 xl6 push-l6 push-xl6">
+                <img class="responsive-img" src="images/home-1.jpg">
+              </div>
+              <div id="h-padding" class="col s12 l6 xl6 pull-l6 pull-xl6 home-text">
                 <p class="grey-text"><strong>Ever noticed a child’s eyes?</strong><br><br> Wide with wonder. Dancing in different directions. A child is always observing and learning. And it is up to us to guide this natural curiosity. For the experiences children have in their formative years are the ones that help them grow into intelligent, confident, creative and perceptive individuals.</p>
 
                 <p class="grey-text"> Whether it’s cognitive, social, physical or emotional; the early years of ages 0 to 5, are critical for a child’s development.</p>
          
                 <p class="grey-text">We, at Elemenopy, understand this. Which is why, we’re here to help your child, and you, begin this wonderful journey. </p>
+                <a href="contact.html" id="download-button" class="btn-large waves-effect waves-light blue">COME, VISIT US</a>
               </div>
-              <div class="col s12 l6 xl6">
-                <br><br>
-                <center> <a href="contact.html" id="download-button" class="btn-large waves-effect waves-light blue">COME, VISIT US</a></center>
-              </div>
+              
             </div>
           </div>
       </div>
     </div>
-  </div>
+  
 
 <div class="illustration-container wow fadeInDown">
   <div class="container">
@@ -80,10 +105,9 @@
             Our innovative curriculum is designed to cover all aspects of learning, helping children develop holistically and grow into confident, thinking individuals.
           </p>
         </div>
-        <br><br>
-        <div class="col s12 l6 xl6 center">
-          <br>
-          <a href="approach.html" id="download-button" class="btn-large waves-effect waves-light blue">OUR APPROACH</a>
+        <br>
+        <div class="col s12 l6 xl6">
+          <a style="float: right;" href="approach.html" id="download-button" class="btn-large waves-effect waves-light blue">KNOW MORE</a>
         </div>
       </div>
     </div>
@@ -102,6 +126,9 @@
   </center>
 </div>
   <div class="section orange"></div>
+  <div class="section orange"></div>
+  <div class="section orange"></div>
+
   <div class="container">
     <h5 class="red-text old wow fadeInLeft mikado">HOW OLD IS YOUR KID?</h5>
 
@@ -139,6 +166,8 @@
       </div>
     </div>
     
+  <div class="section orange"></div>
+  <div class="section orange"></div>
   <div class="section orange"></div>
   <div class="container" style="padding: 0% 0 3% 0">
     <h5 class="red-text old wow fadeInLeft mikado" style="padding-bottom: 3%;">A PEEK INTO ELEMENOPY</h5>
@@ -199,16 +228,6 @@
           
                  <br><br><br>
           </div>
-
-  <div id="modal1" class="modal">
-    <div class="modal-content">
-      <h4>Modal Header</h4>
-      <p>A bunch of text</p>
-    </div>
-    <div class="modal-footer">
-      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
-    </div>
-  </div>
         </div>
       </div>
     </div>
@@ -242,6 +261,31 @@
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script><script>new WOW().init();</script>
+
+  <script type="text/javascript">
+    var elem = document.querySelector('#carousel');
+
+
+    var instance = M.Carousel.init(elem);
+
+
+    // Or with jQuery
+
+    $(document).ready(function(){
+      $('.carousel.carousel-slider').carousel({
+        fullWidth : true
+    });
+      setInterval(function() {
+    $('.carousel').carousel('next');
+  }, 2000);
+    });
+  </script>
+  <script type="text/javascript">
+     $(document).ready(function(){
+    $('.sidenav').sidenav();
+  });
+  </script>
+
   <script type="text/javascript">
      $(document).ready(function(){
     $('.sidenav').sidenav();
