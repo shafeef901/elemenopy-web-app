@@ -3669,14 +3669,16 @@ table span.badge {
 
 .about-header{
   font-family: Mikado;
-  font-size: 3em;
+  font-size: 1.8em;
+  padding-top: 8%;
+  line-height: 25px;
 }
 
 @media only screen and (min-width: 601px) {
   .about-header {
     font-family: Mikado;
-    padding-top: 6%;
-    font-size: 4em;
+    padding-top: 4%;
+    font-size: 3em;
     line-height: 1em;
   }
 }
@@ -3684,7 +3686,35 @@ table span.badge {
 @media only screen and (min-width: 993px) {
   .about-header {
     font-family: Mikado;
-    font-size: 4em;
+    padding-top: 4%;
+    font-size: 3em;
+  }
+}
+
+.a-head{
+  font-family: Mikado;
+  font-size: 1.9em;
+  padding-top: 8%;
+  padding-left: 5%;
+  padding-bottom: 3%;
+  line-height: 25px;
+}
+
+@media only screen and (min-width: 601px) {
+  .a-head {
+    font-family: Mikado;
+    padding-top: 4%;
+    font-size: 3em;
+    line-height: 1em;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  .a-head {
+    font-family: Mikado;
+    padding-top: 4%;
+    padding-left: 3%;
+    font-size: 3em;
   }
 }
 
@@ -3726,6 +3756,41 @@ table span.badge {
 @media only screen and (min-width: 993px) {
   .seek-desktop {
     display: block;
+  }
+}
+
+.prog-desktop{
+  display: none;
+}
+
+@media only screen and (min-width: 601px) {
+  .prog-desktop {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  .prog-desktop {
+    display: block;
+  }
+}
+
+.prog-mob{
+  display: block;
+  position: relative;
+    left:8%;
+}
+
+@media only screen and (min-width: 601px) {
+  .prog-mob {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  .prog-mob {
+    display: none;
+
   }
 }
 
@@ -3803,6 +3868,27 @@ html, body {
   }
 }
 
+.about-header{
+  font-size: 2em;
+  padding-top: 13%;
+  padding-bottom: 2%;
+}
+
+@media only screen and (min-width: 601px) {
+  .about-header {
+    font-size: 3em;
+    padding-top: 10%;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  .about-header {
+    padding-top: 4%;
+    padding-top: 11.1%;
+    font-size: 3em;
+  }
+}
+
 .form-header{
   font-family: Mikado;
   padding-top: 6%;
@@ -3813,7 +3899,7 @@ html, body {
 @media only screen and (min-width: 601px) {
   .form-header {
     font-family: Mikado;
-    font-size: 3em;
+    font-size: 2.8em;
     padding-left: 1%; 
     line-height: 1em;
   }
@@ -3823,7 +3909,7 @@ html, body {
   .form-header {
     font-family: Mikado;
     padding-left: 1%;
-    font-size: 3em;
+    font-size: 2.8em;
   }
 }
 
@@ -3833,7 +3919,7 @@ html, body {
 
 @media only screen and (min-width: 601px) {
   .program-title {
-    font-size: 3em;
+    font-size: 2em;
     padding-top: 5%;
     line-height: 1em;
   }
@@ -3841,7 +3927,7 @@ html, body {
 
 @media only screen and (min-width: 993px) {
   .program-title {
-    font-size: 3em;
+    font-size: 2em;
   }
 }
 
@@ -3978,7 +4064,7 @@ html, body {
 }
 
 .about-blue{
-  padding: 10% 0 4% 0;
+  padding: 5% 0 0% 0;
 }
 
 @media only screen and (min-width: 601px) {
@@ -3990,7 +4076,24 @@ html, body {
 @media only screen and (min-width: 993px) {
   .about-blue {
     font-size: 1.2em;
-    padding: 6% 0 4% 0;
+    padding: 0% 0 0% 0;
+  }
+}
+
+.about-blue2{
+  padding: 6% 0 0% 0;
+}
+
+@media only screen and (min-width: 601px) {
+  .about-blue2 {
+    font-size: 1.2em;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  .about-blue2 {
+    font-size: 1.2em;
+    padding: 4% 0 2% 0;
   }
 }
 
@@ -5446,7 +5549,19 @@ small {
 
 .card {
   position: relative;
-  padding: 2% 8% 2% 8%;
+  padding: 3% 7% 4% 7%;
+  margin: 0rem 0 0rem 0;
+  background-color: #fff;
+  -webkit-transition: -webkit-box-shadow .25s;
+  transition: -webkit-box-shadow .25s;
+  transition: box-shadow .25s;
+  transition: box-shadow .25s, -webkit-box-shadow .25s;
+  border-radius: 2px;
+}
+
+.about-card {
+  position: relative;
+  padding: 2% 5% 2% 5%;
   margin: 0.5rem 0 1rem 0;
   background-color: #fff;
   -webkit-transition: -webkit-box-shadow .25s;
@@ -5454,6 +5569,115 @@ small {
   transition: box-shadow .25s;
   transition: box-shadow .25s, -webkit-box-shadow .25s;
   border-radius: 2px;
+}
+
+@media only screen and (min-width: 601px) {
+  .about-card {
+    position: relative;
+  padding: 2% 2% 2% 2%;
+  margin: 0.5rem 0rem 1rem 0rem;
+  background-color: #fff;
+  -webkit-transition: -webkit-box-shadow .25s;
+  transition: -webkit-box-shadow .25s;
+  transition: box-shadow .25s;
+  transition: box-shadow .25s, -webkit-box-shadow .25s;
+  border-radius: 2px;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  .about-card {
+    position: relative;
+  padding: 2% 4% 0.5% 1%;
+  margin: 0.5rem 0 1rem 0;
+
+  background-color: #fff;
+  -webkit-transition: -webkit-box-shadow .25s;
+  transition: -webkit-box-shadow .25s;
+  transition: box-shadow .25s;
+  transition: box-shadow .25s, -webkit-box-shadow .25s;
+  border-radius: 2px;
+  }
+}
+
+.about-card2 {
+  position: relative;
+  padding: 2% 3% 2% 3%;
+  margin: 0.5rem 0 1rem 0;
+  background-color: #fff;
+  -webkit-transition: -webkit-box-shadow .25s;
+  transition: -webkit-box-shadow .25s;
+  transition: box-shadow .25s;
+  transition: box-shadow .25s, -webkit-box-shadow .25s;
+  border-radius: 2px;
+}
+
+@media only screen and (min-width: 601px) {
+  .about-card2 {
+    position: relative;
+  padding: 2% 1% 2% 2%;
+  margin: 0.5rem 0 1rem 0;
+  background-color: #fff;
+  -webkit-transition: -webkit-box-shadow .25s;
+  transition: -webkit-box-shadow .25s;
+  transition: box-shadow .25s;
+  transition: box-shadow .25s, -webkit-box-shadow .25s;
+  border-radius: 2px;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  .about-card2 {
+    position: relative;
+  padding: 2% 1% 2% 4%;
+  margin: 0.5rem 0 1rem 0;
+  background-color: #fff;
+  -webkit-transition: -webkit-box-shadow .25s;
+  transition: -webkit-box-shadow .25s;
+  transition: box-shadow .25s;
+  transition: box-shadow .25s, -webkit-box-shadow .25s;
+  border-radius: 2px;
+  }
+}
+
+.about-card3 {
+  position: relative;
+  padding: 2% 0% 2% 0%;
+  margin: 0.5rem 0 1rem 0;
+  background-color: #fff;
+  -webkit-transition: -webkit-box-shadow .25s;
+  transition: -webkit-box-shadow .25s;
+  transition: box-shadow .25s;
+  transition: box-shadow .25s, -webkit-box-shadow .25s;
+  border-radius: 2px;
+}
+
+@media only screen and (min-width: 601px) {
+  .about-card3 {
+    position: relative;
+  padding: 0% 0% 2% 0%;
+  margin: 0.5rem 0 1rem 0;
+  background-color: #fff;
+  -webkit-transition: -webkit-box-shadow .25s;
+  transition: -webkit-box-shadow .25s;
+  transition: box-shadow .25s;
+  transition: box-shadow .25s, -webkit-box-shadow .25s;
+  border-radius: 2px;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  .about-card3 {
+    position: relative;
+  padding: 0% 0% 2% 0%;
+  margin: 0.5rem 0 1rem 0;
+  background-color: #fff;
+  -webkit-transition: -webkit-box-shadow .25s;
+  transition: -webkit-box-shadow .25s;
+  transition: box-shadow .25s;
+  transition: box-shadow .25s, -webkit-box-shadow .25s;
+  border-radius: 2px;
+  }
 }
 
 .home-card {

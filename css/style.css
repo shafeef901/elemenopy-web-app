@@ -53,20 +53,22 @@ body {
   max-height: 100%;
 }
 
-@media only screen and (min-width: 601px) {
+@media only screen and (max-width: 993px) and (min-width: 350px) {
   .circ {
     border-radius: 0%;
-
+    min-width: 100%;
+    min-height: 100%;
   }
 }
 
 @media only screen and (min-width: 993px) {
   .circ {
     border-radius: 50%;
+    float: right;
     height: 400px;
     width: 400px;
     position: absolute;
-    top: 15%;
+    top: 13.8%;
     left: 60%;
     z-index: 100;
   }
@@ -118,6 +120,31 @@ body {
   .mob-hide {
     display: flex;
   }
+}
+
+.flex-caption {
+  width: 100%;
+      
+      left: 0;
+      bottom: 0;
+      background: rgba(0,0,0,0);
+      color: #fff;
+      text-align: left;
+      font-size: 1.1em;
+      line-height: 25px;
+}
+
+.flex-caption2 {
+  width: 100%;
+      
+      left: 0;
+      bottom: 0;
+      padding-left: 4%; 
+      background: rgba(0,0,0,0);
+      color: #fff;
+      text-align: left;
+      font-size: 1.1em;
+      line-height: 25px;
 }
 
 @media only screen and (min-width: 601px) {
@@ -190,6 +217,25 @@ body {
 @media only screen and (min-width: 993px) {
   .baa {
     margin-right: 20%;
+  }
+} 
+
+.baaa {
+  padding: 8% 0 3% 0;
+  font-size: 1.1em;
+}
+
+@media only screen and (min-width: 601px) {
+  .baaa {
+   padding: 7% 0 3% 0;
+   font-size: 1.2em;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  .baaa {
+    padding: 3% 0 1.8% 0;
+    font-size: 1.2em;
   }
 } 
 
