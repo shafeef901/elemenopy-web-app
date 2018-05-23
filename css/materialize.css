@@ -5550,13 +5550,41 @@ small {
 .card {
   position: relative;
   padding: 3% 7% 4% 7%;
-  margin: 0rem 0 0rem 0;
+  margin: 0rem 0 0rem 0rem;
   background-color: #fff;
   -webkit-transition: -webkit-box-shadow .25s;
   transition: -webkit-box-shadow .25s;
   transition: box-shadow .25s;
   transition: box-shadow .25s, -webkit-box-shadow .25s;
   border-radius: 2px;
+}
+
+@media only screen and (min-width: 601px) {
+  .card {
+    position: relative;
+  padding: 3% 7% 4% 7%;
+  margin: 0rem 0 0rem 0rem;
+  background-color: #fff;
+  -webkit-transition: -webkit-box-shadow .25s;
+  transition: -webkit-box-shadow .25s;
+  transition: box-shadow .25s;
+  transition: box-shadow .25s, -webkit-box-shadow .25s;
+  border-radius: 2px;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  .card {
+    position: relative;
+  padding: 0.2% 7% 4% 7%;
+  margin: 0rem 0 0rem -1rem;
+  background-color: #fff;
+  -webkit-transition: -webkit-box-shadow .25s;
+  transition: -webkit-box-shadow .25s;
+  transition: box-shadow .25s;
+  transition: box-shadow .25s, -webkit-box-shadow .25s;
+  border-radius: 2px;
+  }
 }
 
 .about-card {
