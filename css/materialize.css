@@ -3610,7 +3610,21 @@ table span.badge {
 
 .home-container{
   font-weight: 900;
+  font-size: 1.2em;
+}
+
+@media only screen and (min-width: 601px) {
+  .home-container {
+    font-weight: 900;
   font-size: 1.6em;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  .home-container {
+    font-weight: 900;
+    font-size: 1.6em;
+  }
 }
 
 @font-face {
@@ -3876,7 +3890,7 @@ html, body {
 }
 
 .carousel-height {
-  max-height: 250px;
+  max-height: 300px;
 }
 
 @media only screen and (min-width: 601px) {
@@ -3931,7 +3945,7 @@ html, body {
 .container {
   margin: 0 auto;
   max-width: 1280px;
-  width: 85%;
+  width: 89%;
 }
 
 @media only screen and (min-width: 601px) {
@@ -3942,7 +3956,7 @@ html, body {
 
 @media only screen and (min-width: 993px) {
   .container {
-    width: 75%;
+    width: 77%;
   }
 }
 
@@ -5459,7 +5473,7 @@ small {
   .home-card {
   position: relative;
   padding: 4% 0% 2% 0%;
-  margin: 0.5rem 8rem 0 8rem;
+  margin: 0.5rem 0rem 0 0rem;
   background-color: #fff;
   -webkit-transition: -webkit-box-shadow .25s;
   transition: -webkit-box-shadow .25s;
@@ -5473,7 +5487,7 @@ small {
   .home-card {
     position: relative;
   padding: 4% 0% 2% 0%;
-  margin: 0.5rem 10rem 0 10rem;
+  margin: 0.5rem 4rem 0 4rem;
   background-color: #fff;
   -webkit-transition: -webkit-box-shadow .25s;
   transition: -webkit-box-shadow .25s;
@@ -5500,7 +5514,7 @@ small {
   .contact-card {
   position: relative;
   padding: 4% 4% 2% 4%;
-  margin: 0rem 0rem 0 0rem;
+  margin: 0.5rem 0rem 0 0rem;
   background-color: #fff;
   -webkit-transition: -webkit-box-shadow .25s;
   transition: -webkit-box-shadow .25s;
@@ -9172,6 +9186,10 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
 
 .carousel .carousel-item > img {
   width: 100%;
+}
+
+ p{
+  font-size: 0.98em;
 }
 
 .carousel .indicators {
