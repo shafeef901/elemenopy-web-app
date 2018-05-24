@@ -3648,7 +3648,7 @@ table span.badge {
 .approach-header{
   font-family: Mikado;
   padding-top: 1%;
-  font-size: 1.5em;
+  font-size: 1.9em;
 }
 
 @media only screen and (min-width: 601px) {
@@ -3662,6 +3662,28 @@ table span.badge {
 
 @media only screen and (min-width: 993px) {
   .approach-header {
+    font-family: Mikado;
+    font-size: 3em;
+  }
+}
+
+.approach-header2{
+  font-family: Mikado;
+  padding-left: 0%;
+  font-size: 1.9em;
+}
+
+@media only screen and (min-width: 601px) {
+  .approach-header2 {
+    font-family: Mikado;
+    
+    font-size: 3em;
+    line-height: 1em;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  .approach-header2 {
     font-family: Mikado;
     font-size: 3em;
   }
@@ -3991,6 +4013,41 @@ html, body {
   }
 }
 
+.app-desktop {
+  display: none;
+}
+
+@media only screen and (min-width: 601px) {
+  .app-desktop {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  .app-desktop {
+    display: block;
+    float: left;max-height: 500px;
+  }
+}
+
+.app-mob {
+  display: block;
+  max-width: 100%;height: auto;
+}
+
+@media only screen and (min-width: 601px) {
+  .app-mob {
+    display: block;
+    max-width: 100%;height: auto;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  .app-mob {
+    display: none;
+  }
+}
+
 .approach-container {
   margin: 0 auto;
   max-width: 1280px;
@@ -4005,7 +4062,7 @@ html, body {
 
 @media only screen and (min-width: 993px) {
   .approach-container {
-    width: 90%;
+    width: 87%;
   }
 }
 
@@ -4045,6 +4102,25 @@ html, body {
     width: 77%;
   }
 }
+
+.app-container {
+  margin: 0 auto;
+  max-width: 1280px;
+  width: 89%;
+}
+
+@media only screen and (min-width: 601px) {
+  .app-container {
+    width: 85%;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  .app-container {
+    padding-left: 16%;
+  }
+}
+
 
 .about-container {
   margin: 0 auto;
@@ -5577,6 +5653,46 @@ small {
   .card {
     position: relative;
   padding: 0.2% 7% 4% 7%;
+  margin: 0rem 0 0rem -1rem;
+  background-color: #fff;
+  -webkit-transition: -webkit-box-shadow .25s;
+  transition: -webkit-box-shadow .25s;
+  transition: box-shadow .25s;
+  transition: box-shadow .25s, -webkit-box-shadow .25s;
+  border-radius: 2px;
+  }
+}
+
+.app-card {
+  position: relative;
+  padding: 3% 5% 4% 5%;
+  margin: 0rem 0 0rem 0rem;
+  background-color: #fff;
+  -webkit-transition: -webkit-box-shadow .25s;
+  transition: -webkit-box-shadow .25s;
+  transition: box-shadow .25s;
+  transition: box-shadow .25s, -webkit-box-shadow .25s;
+  border-radius: 2px;
+}
+
+@media only screen and (min-width: 601px) {
+  .app-card {
+    position: relative;
+  padding: 3% 7% 4% 7%;
+  margin: 0rem 0 0rem 0rem;
+  background-color: #fff;
+  -webkit-transition: -webkit-box-shadow .25s;
+  transition: -webkit-box-shadow .25s;
+  transition: box-shadow .25s;
+  transition: box-shadow .25s, -webkit-box-shadow .25s;
+  border-radius: 2px;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  .app-card {
+    position: relative;
+  padding: 0.2% 4% 4% 7%;
   margin: 0rem 0 0rem -1rem;
   background-color: #fff;
   -webkit-transition: -webkit-box-shadow .25s;
