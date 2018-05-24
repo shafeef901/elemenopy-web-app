@@ -3781,6 +3781,22 @@ table span.badge {
   }
 }
 
+.form-mob{
+  display: block;
+}
+
+@media only screen and (min-width: 500px) {
+  .form-mob {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  .form-mob {
+    display: none;
+  }
+}
+
 .prog-desktop{
   display: none;
 }
@@ -3885,14 +3901,16 @@ html, body {
 
 @media only screen and (min-width: 993px) {
   .program-header {
+    padding-top: 4%;
     font-family: Rubik;
-    font-size: 2.8em;
+    font-size: 3em;
   }
 }
 
 .about-header{
   font-size: 2em;
   padding-top: 13%;
+
   padding-bottom: 2%;
 }
 
@@ -3906,8 +3924,24 @@ html, body {
 @media only screen and (min-width: 993px) {
   .about-header {
     padding-top: 4%;
-    padding-top: 11.1%;
+    padding-top: 13%;
     font-size: 3em;
+  }
+}
+
+.pad-left{
+
+}
+
+@media only screen and (min-width: 601px) {
+  .pad-left {
+
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  .pad-left {
+    padding-left: 9%;
   }
 }
 
@@ -3915,7 +3949,7 @@ html, body {
   font-family: Mikado;
   padding-top: 6%;
   padding-left: 2.5%;
-  font-size: 1.6em;
+  font-size: 1.7em;
 }
 
 @media only screen and (min-width: 601px) {
@@ -3957,7 +3991,7 @@ html, body {
   font-family: Mikado;
   color:#47ca5e;
   padding: 6% 2% 0 2%;
-  font-size: 1.5em;
+  font-size: 1.8em;
 }
 
 @media only screen and (min-width: 601px) {
