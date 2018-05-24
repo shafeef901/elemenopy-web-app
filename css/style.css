@@ -245,7 +245,7 @@ body {
 
 @media only screen and (min-width: 601px) {
   .home-b {
-   float: none;
+   float: right;
   }
 }
 

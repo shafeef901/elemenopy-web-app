@@ -140,31 +140,32 @@
       
       <div class="row no-padding">
         <a href="programs.html#first"><div class="col s12 l4 xl4 wow fadeInLeft">
-          <p class="yellow-text"><span style="font-weight: bold;" style="font-weight: 900;">LITTLE LEARNERS</span><br>
+          <p class="yellow-text"><span style="font-weight: bold;font-size: 1.2em;">LITTLE LEARNERS</span><br>
           <span style="font-weight: bold;" class="grey-text"><span style="font-weight: bold;" >9 months - 1.5 years</span ></span></p>
           <img class="home-b" style="" class="responsive-img" src="images/L.png">
         </div></a>
+
         <a href="programs.html#second"><div class="col s12 l4 xl4 wow fadeInLeft">
-          <span style="float: left;">
-            <p class="green-text"><span style="font-weight: bold;" >MEANING MAKERS</span ><br>
-            <span style="font-weight: bold;" class="grey-text"><span style="font-weight: bold;" >1.5 years - 2.5 years</span ></span></p>
-          </span>
-            <img class="home-b" style="" class="responsive-img" src="images/M.png">
+          <p class="green-text"><span style="font-weight: bold;font-size: 1.2em;" >MEANING MAKER</span ><br>
+          <span style="font-weight: bold;" class="grey-text"><span style="font-weight: bold;" >1.5 years - 2.5 years</span ></span></p>
+          <img class="home-b" style="transform: rotate(45deg);padding-top: 3%;" class="responsive-img" src="images/M.png">
         </div></a>
+
         <a href="programs.html#third"><div class="col s12 l4 xl4 wow fadeInLeft">
-          <p class="orange-text"><span style="font-weight: bold;" >NIFTY NEWBIES</span ><br>
+          <p class="orange-text"><span style="font-weight: bold;font-size: 1.2em;" >NIFTY NEWBIES</span ><br>
           <span style="font-weight: bold;" class="grey-text"><span style="font-weight: bold;" >2.5 years - 3.5 years</span ></span></p>
           <img class="home-b" style="" class="responsive-img" src="images/N.png">
         </div></a>
+
       </div>
       <div class="row no-padding">
         <a href="programs.html#fourth"><div class="col s12 l4 xl4 wow fadeInLeft">
-          <p class="red-text"><span style="font-weight: bold;" >OBSERVERS</span ><br>
+          <p class="red-text"><span style="font-weight: bold;font-size: 1.2em;" >OBSERVERS</span ><br>
           <span style="font-weight: bold;" class="grey-text"><span style="font-weight: bold;" >3.5 years - 4.5 years</span ></span></p>
           <img class="home-b" style="" class="responsive-img" src="images/O.png">
         </div></a>
         <a href="programs.html#fifth"><div class="col s12 l4 xl4 wow fadeInLeft">
-          <p class="blue-text"><span style="font-weight: bold;" >PIONEERS</span ><br>
+          <p class="blue-text"><span style="font-weight: bold;font-size: 1.2em;" >PIONEERS</span ><br>
           <span style="font-weight: bold;" class="grey-text"><span style="font-weight: bold;" >4.5 years - 5.5 years</span ></span></p>
           <img class="home-b" style="" class="responsive-img" src="images/P.png">
         </div></a>
@@ -196,51 +197,56 @@
 
   <footer class="page-footer orange" ng-controller="formCtrl">
     <div class="orange">
+      <img style="position:absolute;z-index: 0;height: auto; width: 100%; object-fit: contain;padding: 2%;" class="seek-desktop responsive-img" src="images/Form_Desktop_Shapes.png">
+
       <div class="container">
 
         <div style="padding-top: 5%;" class="orange white-text">
           <div class="about-orange">
-            <div class="row baa">
+            <div style="position: relative;z-index: 3" class="row baa">
               <div class="form-header">DROP BY SOON</div><br>
               <form name="contactForm">
-              <div class="col s12 m12 l5 xl5">
-                 <div class="input-field">
-                  <input style="color:white;border: none;border-bottom:1px  solid white;" required="" id="name" type="text" class="validate" ng-model="p_name" minlength="2">
-                  <label style="color: white;font-weight: 300;" for="name">Guardian's Name</label>
-                 </div>
-                 <div class="input-field">
-                  <input style="color:white;border: none;border-bottom:1px  solid white;" required="" id="mob" type="number" class="validate" ng-model="mob">
-                  <label style="color: white;font-weight: 300;" for="emailid">Mobile Number</label>
-                 </div>
-                 <div class="input-field">
-                  <input style="color:white;border: none;border-bottom:1px  solid white;" required="" id="emailid" type="email" class="validate" ng-model="email">
-                  <label style="color: white;font-weight: 300;" for="emailid">Email ID</label>
-                 </div>
-              </div>
-              <div class="mob-hide col l2 xl2 orange-text">
-                .
-              </div>
-              <div class="col s12 l5 xl5">
-                <div class="input-field">
-                  <input style="color:white;border: none;border-bottom:1px  solid white;" required="" id="c_name" type="text" class="validate" ng-model="c_name" minlength="2">
-                  <label style="color: white;font-weight: 300;" for="c_name">Child Name</label>
-                 </div>
-                <div class="input-field">
-                  <input style="color:white;border: none;border-bottom:1px  solid white;" required="" id="c_age" type="number" class="validate" ng-model="c_age">
-                  <label style="color: white;font-weight: 300;" for="c_age">Child Age</label>
-                 </div>
-                <div class="center">
-                  <button id="download-button" class="btn-large waves-effect waves-light blue" ng-click="clicked()">YES, I'M IN</button>
+                <div class="col s12 m12 l5 xl5">
+                   <div class="input-field">
+                    <input style="color:white;border: none;border-bottom:1px  solid white;" required="" id="name" type="text" class="validate" ng-model="p_name" minlength="2">
+                    <label style="color: white;font-weight: 300;" for="name">Guardian's Name</label>
+                   </div>
+                   <div class="input-field">
+                    <input style="color:white;border: none;border-bottom:1px  solid white;" required="" id="mob" type="number" class="validate" ng-model="mob">
+                    <label style="color: white;font-weight: 300;" for="emailid">Mobile Number</label>
+                   </div>
+                   <div class="input-field">
+                    <input style="color:white;border: none;border-bottom:1px  solid white;" required="" id="emailid" type="email" class="validate" ng-model="email">
+                    <label style="color: white;font-weight: 300;" for="emailid">Email ID</label>
+                   </div>
                 </div>
-              </div>
-            </form>
+                <div class="mob-hide col l2 xl2 orange-text">
+                  .
+                </div>
+                <div class="col s12 m12 l5 xl5">
+                  <div class="input-field">
+                    <input style="color:white;border: none;border-bottom:1px  solid white;" required="" id="c_name" type="text" class="validate" ng-model="c_name" minlength="2">
+                    <label style="color: white;font-weight: 300;" for="c_name">Child Name</label>
+                   </div>
+                  <div class="input-field">
+                    <input style="color:white;border: none;border-bottom:1px  solid white;" required="" id="c_age" type="number" class="validate" ng-model="c_age">
+                    <label style="color: white;font-weight: 300;" for="c_age">Child Age</label>
+                   </div>
+                  <div class="center">
+                    <button id="download-button" class="btn-large waves-effect waves-light blue" ng-click="clicked()">YES, I'M IN</button>
+                  </div>
+
+                </div>
+              </form>
             </div>
-          
+            
                  <br><br><br>
           </div>
         </div>
       </div>
+
     </div>
+
       <br><br><br>
     <div class="footer-copyright">
       <div class="container center">
