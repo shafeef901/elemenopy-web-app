@@ -19,7 +19,7 @@
   <script type="text/javascript" src="js/init.js"></script>
 
 </head>
-<body ng-app="homeApp">
+<body ng-app="homeApp" ng-controller="formCtrl">
 
   <div class="navbar-fixed">
     <nav class="white" role="navigation">
@@ -83,13 +83,14 @@
               <p class="grey-text"> Well, Mariyam Abdul Azeez was not the one to give into circumstances. As a young mother, when she saw he lack of good educational facilities in Jeddah, where she had settled with her family, she decided to take matters into her own hands and became a teacher at her son’s school. This was the start of her long and inspirational journey in the field of education. 
               </p>
               <p class="grey-text">She pursued her Bachelors in education while being a full-time teacher and mother. And soon progressed to the position of a principal. But she wanted to do more. Which is why, in a country where women had little say, she took up the challenge of setting up her own school. And thus, with an ironclad will and her family standing as staunch pillars of support, she started her first venture, Little Kingdom Preschool, 25 years ago.</p>
- 
-              <p class="grey-text">Today, she runs two British curriculum schools in Jeddah, Al Maqased International School and Arwa international School. She has also realised her long cherished dream of bringing her extensive knowledge of education back to her own country by co-founding a purely Montessori school called Spring Feld House of Children in her hometown - Thallassery. And with Elemenopy, she continues to turn her dream of quality education for children into a reality.
+              <a style="cursor: pointer;" ng-show = "!see" ng-click = "seeMore()" class="grey-text"><strong>See More..</strong></a>
+              <p ng-show = "see" class="grey-text">Today, she runs two British curriculum schools in Jeddah, Al Maqased International School and Arwa international School. She has also realised her long cherished dream of bringing her extensive knowledge of education back to her own country by co-founding a purely Montessori school called Spring Feld House of Children in her hometown - Thallassery. And with Elemenopy, she continues to turn her dream of quality education for children into a reality.
               </p>
             </span>
           </div>
            <div class="col s12 l6 xl6 pull-l6 pull-xl6">
-            <img style="width: 100%;" class="portrait" src="images/Founder_Desktop_cropped.jpg">
+            <img src="images/Founder_Desktop_Shapes.png" style="position:absolute;z-index: 2;height: auto; width: 100%; object-fit: contain;padding-top: 50%;" class="responsive-img">
+            <img style="width: 100%;z-index: 1;" class="portrait" src="images/Founder_Desktop_cropped.jpg">
           </div>
           
          
@@ -110,41 +111,31 @@
                       </div>
                     <div class="col s12 l6 xl6 pull-l6 pull-xl6">
                       <h5 style="font-weight: bold;text-align:left;padding:2%;font-size: 1.6em" class="flex-caption red-text no-padding rubik">SUJATA</h5>
-                      <p class="flex-caption grey-text">She believes, teaching is not only her passion but her calling. Doing her best so that her students can be the best version of themselves, is the purpose she is committed to. And to achieve this, she focuses on innovative, hands-on activities that make learning fun and exciting for her students</p>
+                      <p class="flex-caption grey-text">As a mother of two, Sujata is more than aware of the importance of early childhood education. Hence, with a teaching approach that nurtures the imagination and creativity of children, she is committed to helping them become confident yet sensitive individuals during these formative years
+                      </p>
                     </div>
                   </li>
                   <li>
                     <div style="padding: 2%;" class="row">
                       <div class="col s12 l6 xl6 push-l6 push-xl6">
-                        <img src="images/Team_02.jpg" />
+                        <img src="images/Team_03.jpg" />
                       </div>
                       <div class="col s12 l6 xl6 pull-l6 pull-xl6">
                         <h5 style="font-weight: bold;text-align:left;padding:2%;font-size: 1.6em" class="flex-caption red-text no-padding rubik">ROHINI ANAND</h5>
-                        <p class="flex-caption grey-text">As a mother of two, Sujata is more than aware of the importance of early childhood education. Hence, with a teaching approach that nurtures the imagination and creativity of children, she is committed to helping them become confident yet sensitive individuals during these formative years</p>
+                        <p class="flex-caption grey-text">She believes, teaching is not only her passion but her calling. Doing her best so that her students can be the best version of themselves, is the purpose she is committed to. And to achieve this, she focuses on innovative, hands-on activities that make learning fun and exciting for her students</p>
                       </div>
                     </div>
                   </li>
                   <li>
                   <div style="padding: 2%;" class="row">
                     <div class="col s12 l6 xl6 push-l6 push-xl6">
-                      <img src="images/Team_03.jpg" />
+                      <img src="images/Team_02.jpg" />
                     </div>
                     <div class="col s12 l6 xl6 pull-l6 pull-xl6">
-                      <h5 style="font-weight: bold;text-align:left;padding:2%;font-size: 1.6em" class="flex-caption red-text no-padding rubik">MAJEEHA</h5>
-                      <p class="flex-caption grey-text">A qualified Montessori and CIDTT trained teacher, Majeeha has worked for more than seven years in the field of early childhood education. Believing herself to be more of a facilitator than a teacher, she helps children explore, discover and understand by creating a learning environment that unleashes their minds</p>
-                    </div>
-                  </div>
-                  </li>
-                  <li>
-                    <div style="padding: 2%;" class="row">
-                      <div class="col s12 l6 xl6 push-l6 push-xl6">
-                        <img src="images/Team_04.jpg" />
-                      </div>
-                      <div class="col s12 l6 xl6 pull-l6 pull-xl6">
                         <h5 style="font-weight: bold;text-align:left;padding:2%;font-size: 1.6em" class="flex-caption red-text no-padding rubik">ARTHI</h5>
                         <p class="flex-caption grey-text">An administrator par excellence, Arthi has also been a yoga instructor for children for four years. After studying yoga and Bharatanatyam at Kalakshethra and graduating in the same from Tamilnadu Music college, she completed the Arkaya Trainers Program with Yogacharini Maitreyi; post which she started teaching both the arts and continues to do so till today</p>
                       </div>
-                    </div>
+                  </div>
                   </li>
                   <li>
                     <div  style="padding: 2%;" class="row">
@@ -190,28 +181,27 @@
 
   </div>
   <footer class="page-footer blue" ng-controller="formCtrl">
-    <img style="position:absolute;z-index: 0;height: auto; width: 100%; object-fit: contain;padding: 2%;" class="seek-desktop responsive-img" src="images/WorkWithUs_Desktop_Shapes.png">
+    <img style="position:absolute;z-index: 0;height: auto; width: 100%; object-fit: contain;padding: 2%;" class="about-desktop responsive-img" src="images/WorkWithUs_Desktop_Shapes.png">
     <div  class="container">
-
       <div class="blue white-text">
         <div class="about-blue">
           <div style="position:relative; z-index: 4" class="row baa">
             <div class="form-header mikado">WANT TO WORK WITH US?</div><br>
 
-              <div class="row">
-                <div class="col s12 l5 xl5">
+              <div style="margin: 0;" class="row no-padding">
+                <div class="col s12 l8 xl5">
                   <p style="font-size: 1.1em;">We're always looking to expand our team, with teachers and learners alike.</p>
-                  <p style="font-weight: 900;font-size: 1.1em">Go on then, and drop us a mail at hello@elemenopy.in</p>
+                  <p class="about-desktop" style="font-weight: 900;font-size: 1.1em">Go on then, and drop us a mail at hello@elemenopy.in</p>
                 </div>
               </div>
-              
-            </div>
-          
+             
           </div>
-           <br><br><br>
+          
         </div>
+         <br><br><br>
       </div>
     </div>
+    <img style="position:relative;bottom:80px;z-index: 0;height: auto; width: auto; object-fit: contain;" class="about-mob responsive-img" src="images/WorkWithUs_Mobile_Shapes.png">
    <br><br><br>
     <div class="footer-copyright">
       <div class="container center">

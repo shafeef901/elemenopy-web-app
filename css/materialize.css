@@ -3781,6 +3781,40 @@ table span.badge {
   }
 }
 
+.about-desktop{
+  display: none;
+}
+
+@media only screen and (min-width: 601px) {
+  .about-desktop {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  .about-desktop {
+    display: block;
+  }
+}
+
+.about-mob{
+  display: block;
+  padding-left: 2%;
+}
+
+@media only screen and (min-width: 601px) {
+  .about-mob {
+    display: none;
+    padding-left: 6%;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  .about-mob {
+    display: none;
+  }
+}
+
 .form-mob{
   display: block;
 }

@@ -7,8 +7,13 @@ angular.module('homeApp', ['ngCookies'])
   .controller('formCtrl', function($scope, $http, $interval, $cookies) {
 
   	$scope.errMsg = null;
+  	$scope.see = false;
 
   	var dataRef = firebase.database().ref().child('form_data');
+
+  	$scope.seeMore = function(){
+  		$scope.see = true;
+  	}
  
   	$scope.clicked = function(){
 			console.log($scope.contactForm);
