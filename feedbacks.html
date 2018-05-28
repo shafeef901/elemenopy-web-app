@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Programs - Elemenopy</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/css?family=Rubik:300,500" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/animate.css" rel="stylesheet">
+  <link href="css/set.css" rel="stylesheet">
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular-cookies.min.js"></script> 
+  <script type="text/javascript" src="js/feedback.js"></script>
+
+</head>
+<body class="red white-text" ng-app="feedbackApp" ng-controller="feedbackController">
+  <div class="container">
+    <table>
+      <thead>
+        <tr>
+          <th>Guardian's name</th>
+          <th>Mobile Number</th>
+          <th>Email ID</th>
+          <th>Child Name</th>
+          <th>Child Age</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr ng-repeat="feed in data">
+          <td>{{feed.p_name}}</td>
+          <td>{{feed.p_name}}</td>
+          <td>{{feed.p_name}}</td>
+          <td>{{feed.p_name}}</td>
+          <td>{{feed.p_name}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <footer class="page-footer red">
+    
+    <div class="footer-copyright">
+      <div class="container center">
+        Made with ❤ <a class=" white-text text-lighten-3" href="http://accelerate.net.in"> by Accelerate</a>
+      </div>
+    </div>
+    
+  </footer>
+
+
+  <!--  Scripts-->
+
+<script src="https://www.gstatic.com/firebasejs/4.10.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDqQLRJH7rtoox8AvVfEUQjgcmMV-zVCkg",
+    authDomain: "elemenopy-web.firebaseapp.com",
+    databaseURL: "https://elemenopy-web.firebaseio.com",
+    projectId: "elemenopy-web",
+    storageBucket: "elemenopy-web.appspot.com",
+    messagingSenderId: "776927140068"
+  };
+  firebase.initializeApp(config);
+</script>
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script><script>new WOW().init();</script>
+  <script type="text/javascript">
+     $(document).ready(function(){
+    $('.sidenav').sidenav();
+  });
+  </script>
+
+  </body>
+</html>
