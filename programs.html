@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120281081-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-120281081-1');
+  </script>
+
+
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
   <title>Programs - Elemenopy</title>
@@ -12,6 +23,15 @@
   <link href="css/animate.css" rel="stylesheet">
   <link href="css/set.css" rel="stylesheet">
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+  
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular-cookies.min.js"></script> 
@@ -31,13 +51,16 @@
           <li><a style="font-size: 1.2em;" class="green-text" href="contact.html">CONTACT US</a></li>     
         </ul> 
         <ul id="nav-mobile" class="sidenav">
-          <li style="padding-top: 30%;"><a style="font-size: 1.8em;" class="orange-text" href="index.html">HOME</a></li>
+          <li style="padding-top: 15%;"><a style="font-size: 1.8em;" class="orange-text" href="index.html">HOME</a></li>
           <li><a style="font-size: 1.8em;" class="blue-text" href="about.html">ABOUT US</a></li>
           <li><a style="font-size: 1.8em;" class="yellow-text" href="approach.html">OUR APPROACH</a></li>
-          <li><a style="font-size: 1.8em;border-top: 5px solid #F05B65;" class="red-text" href="programs.html">PROGRAMMES</a></li>
+          <li><a style="font-size: 1.8em;border-left: 5px solid #F05B65;" class="red-text" href="programs.html">PROGRAMMES</a></li>
           <li><a style="font-size: 1.8em;" class="green-text" href="contact.html">CONTACT US</a></li>
-          <br>
-          <img class="my-seek" src="images/logo.jpg" /> 
+          <div class="row">
+            <div class="col s10">
+              <img class="my-seek" src="images/logo.jpg" /> 
+            </div>
+          </div> 
         </ul>
 
       </div>
@@ -48,13 +71,13 @@
         <h3 class="program-header white-text">OUR PROGRAMMES</h3>
         <div class="row" style="padding: 0;margin: 0;">
           <div class="col s10 l6 xl6" style="padding: 0;margin: 0;">
-            <p style="font-weight: 300;">And with growth, comes change. Children are constantly transitioning as they develop, and at Elemenopy, they find themselves in a happy, creative and secure space which prepares them to make these transitions smoothly.</p>
+            <p style="font-weight: 300;">And with growth, comes change. Children are constantly transitioning as they develop, and at Elemenopy, they find <span id="first"></span>themselves in a happy, creative and secure space which prepares them to make these transitions smoothly.</p>
           </div>
         </div>
         <br><br>
       </div>
     </div>
-    <div id="first" class="program-container">
+    <div class="program-container">
       <div class="row no-padding">
         <div style="float: left;"  class="col s0 l9 xl9 no-padding">
           <div class="white card grey-text wow fadeInLeft">
@@ -64,7 +87,7 @@
               <span class="program-subtitle grey-text">9 months - 1.5 years</span><br>
               <span class="program-subtitle grey-text">3 Days a week : 1 hour each</span>
             </div>
-            <p>In today’s world of tabs and screens, we aim to strengthen the real, tangible bond between you and your child. Aided by an experienced teacher, you get to help your child make the all important transition from your home to a learning environment. And don’t worry, we mix a whole lot of fun with the learning to make this transition even smoother for you two. So, as we, together, get your Little Learner started on developing cognitive as well as fine and gross motor skills, join in on the fun through a sing-along session or have insightful conversations with other new moms.</p>
+            <p>In today’s world of tabs and screens, we aim to strengthen the real, tangible bond between you and your child. Aided by an experienced teacher, you get to help your child make the all important transition from your home to a learning environment. And don’t worry, we mix a whole lot of fun with the learning to make this transition even smoother for you two. So, as we, together, get your Little Learner started on developing cognitive as well as fine and gross motor skills, join <span id="second"></span> in on the fun through a sing-along session or have insightful conversations with other new moms.</p>
           </div>
         </div>
         <div style="margin: 0" class="col s0 l3 xl3 no-padding">
@@ -73,7 +96,7 @@
         </div>
       </div>
     </div>
-    <div id="second" class="program-container">
+    <div class="program-container">
       <div class="row no-padding">
         <div style="margin: 0" class="col s0 l3 xl3 no-padding">
           
@@ -86,13 +109,13 @@
               <img class="prog-mob" style="float: right;padding-top: 3%;" src="images/M_1.png">
               <h5 class="program-title green-text">MEANING MAKERS</h5>
               <span class="program-subtitle grey-text">1.5 years - 2.5 years</span><br>
-              <p>There is nothing better than learning through exploration and discovery. And that’s exactly what your Meaning Maker will get to do. Not only will your child start recognising and understanding his or her environment but also start engaging with it. With a focus on emotional growth, your child will meet new people, participate in group activities and begin to better understand social cues. From using all 5 senses to copying simple actions to exploring colours as well as a variety of words and sounds, learning will be fun and easy. </p>
+              <p>There is nothing better than learning through exploration and discovery. And that’s exactly what your Meaning Maker will get to do. Not only will your child start recognising and understanding his or her environment but also start engaging with it. With a focus on emotional growth, your child will meet new people, participate in group activities and begin <span id="third"></span> to better understand social cues. From using all 5 senses to copying simple actions to exploring colours as well as a variety of words and sounds, learning will be fun and easy. </p>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div id="third" class="program-container">
+    <div class="program-container">
       <div class="row no-padding">
         <div style="float: left;"  class="col s0 l9 xl9 no-padding">
           <div class="white card grey-text wow fadeInLeft">
@@ -100,7 +123,7 @@
               <img style="float: right;padding-top: 3%;" src="images/N.png">
               <h5 class="program-title orange-text">NIFTY NEWBIES</h5>
               <span class="program-subtitle grey-text">2.5 years - 3.5 years</span><br>
-              <p>This is the time when your child is just a step away from experiencing a more formal education system. Which is why, we help your Nifty Newbie brush up his or her skills for school life, making this transition as easy as possible. Through further exploration and discovery as well as activity based learning, we focus on refining your child’s fine motor skills. We give special attention to pre-writing, artwork, science activities, play characters and movement games, getting your child ready, and more importantly, excited for school life.</p>
+              <p>This is the time when your child is just a step away from experiencing a more formal education system. Which is why, we help your Nifty Newbie brush up his or her skills for school life, making this transition as easy as possible. Through further exploration and discovery as well as activity based learning, we focus on refining your child’s fine motor skills. <span id="fourth"></span> We give special attention to pre-writing, artwork, science activities, play characters and movement games, getting your child ready, and more importantly, excited for school life.</p>
             </div>
           </div>
         </div>
@@ -110,7 +133,7 @@
         </div>
       </div>
     </div>
-    <div id="fourth" class="program-container">
+    <div class="program-container">
       <div class="row no-padding">
         <div style="margin: 0" class="col s0 l3 xl3 no-padding">
           
@@ -122,13 +145,13 @@
               <img style="float: right;padding-top: 3%;" src="images/O.png">
               <h5 class="program-title red-text">OBSERVERS</h5>
               <span class="program-subtitle grey-text">3.5 years - 4.5 years</span><br>
-              <p>As your child takes the first step into kindergarten, we make this transition just as smooth as all the others. As an Observer your child moved beyond understanding his or her environment and starts to understand concepts. We begin with the learning of the alphabet using phonic sounds, making it easy to grasp. Apart from letters, Observers also learn numbers, begin writing and reading, and also improve their oral skills. And so, in an atmosphere that is encouraging and vibrant, your child gets to develop holistically.</p>
+              <p>As your child takes the first step into kindergarten, we make this transition just as smooth as all the others. As an Observer your child moved beyond understanding his or her environment and starts to understand concepts. We begin with the learning of the alphabet using phonic sounds, making it easy to grasp. Apart from letters, Observers also <span id="fifth"></span> learn numbers, begin writing and reading, and also improve their oral skills. And so, in an atmosphere that is encouraging and vibrant, your child gets to develop holistically.</p>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div id="fifth" class="program-container">
+    <div class="program-container">
       <div class="row no-padding">
         <div style="float: left;"  class="col s0 l9 xl9 no-padding">
           <div class="white card grey-text wow fadeInLeft">
@@ -160,7 +183,7 @@
               <div class="col s12 m12 l5 xl5">
                  <div class="input-field">
                   <input style="color:white;border: none;border-bottom:1px  solid white;" required="" id="name" type="text" class="validate" ng-model="p_name" minlength="2">
-                  <label style="color: white;font-weight: 300;" for="name">Guardian's Name</label>
+                  <label style="color: white;font-weight: 300;" for="name">Parent/Guardian's Name</label>
                  </div>
                  <div class="input-field">
                   <input style="color:white;border: none;border-bottom:1px  solid white;" required="" id="mob" type="number" class="validate" ng-model="mob">

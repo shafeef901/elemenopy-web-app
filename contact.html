@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120281081-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-120281081-1');
+  </script>
+
+
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
   <title>Contact Us | Elemenopy</title>
@@ -9,6 +20,15 @@
    <link href="css/animate.css" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular-cookies.min.js"></script> 
@@ -29,13 +49,16 @@
           <li><a style="font-size: 1.2em;border-top: 5px solid #6BBE65;" class="green-text" href="contact.html">CONTACT US</a></li>     
         </ul> 
         <ul id="nav-mobile" class="sidenav">
-          <li style="padding-top: 30%;"><a style="font-size: 1.8em;" class="orange-text" href="index.html">HOME</a></li>
+          <li style="padding-top: 15%;"><a style="font-size: 1.8em;" class="orange-text" href="index.html">HOME</a></li>
           <li><a style="font-size: 1.8em;" class="blue-text" href="about.html">ABOUT US</a></li>
           <li><a style="font-size: 1.8em;" class="yellow-text" href="approach.html">OUR APPROACH</a></li>
           <li><a style="font-size: 1.8em;" class="red-text" href="programs.html">PROGRAMMES</a></li>
-          <li><a style="font-size: 1.8em;border-top: 5px solid #6BBE65;" class="green-text" href="contact.html">CONTACT US</a></li>
-          <br>
-          <img class="my-seek" src="images/logo.jpg" /> 
+          <li><a style="font-size: 1.8em;border-left: 5px solid #6BBE65;" class="green-text" href="contact.html">CONTACT US</a></li>
+          <div class="row">
+            <div class="col s10">
+              <img class="my-seek" src="images/logo.jpg" /> 
+            </div>
+          </div>
         </ul>
 
       </div>
@@ -53,7 +76,7 @@
             <a href="tel:+91 4448617761"><span class="contact grey-text" style="color:#47ca5e;font-weight: 300;padding: 0 2% 0 2%;">+91 44 4861 7761 </span></a><br>
             <a href="tel:+91 9884067767"><span class="contact grey-text" style="color:#47ca5e;font-weight: 300;padding: 0 2% 0 2%;">+91 9884067767</span></a><br><br>
             <a href="mailto:hello@elemenopy.in"><span class="contact grey-text" style="color:#47ca5e;font-weight: 300;padding: 0 2% 0 2%;"><strong>hello@elemenopy.in</strong></span></a><br><br>
-            <span class="contact grey-text" style="color:#47ca5e;font-weight: 300;padding: 0 2% 0 2%;">19/3 Sterling Road, 1st Cross ST</span><br>
+            <span class="contact grey-text" style="color:#47ca5e;font-weight: 300;padding: 0 2% 0 2%;">19/3 Sterling Road, 1st Cross Street</span><br>
             <span class="contact grey-text" style="color:#47ca5e;font-weight: 300;padding: 0 2% 0 2%;">Nungambakkam, Chennai - 36</span>
           </div>
         </div>
@@ -81,7 +104,7 @@
               <div class="col s12 m12 l5 xl5">
                  <div class="input-field">
                   <input style="color:white;border: none;border-bottom:1px  solid white;" required="" id="name" type="text" class="validate" ng-model="p_name" minlength="2">
-                  <label style="color: white;font-weight: 300;" for="name">Guardian's Name</label>
+                  <label style="color: white;font-weight: 300;" for="name">Parent/Guardian's Name</label>
                  </div>
                  <div class="input-field">
                   <input style="color:white;border: none;border-bottom:1px  solid white;" required="" id="mob" type="number" class="validate" ng-model="mob">

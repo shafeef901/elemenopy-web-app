@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120281081-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-120281081-1');
+  </script>
+
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
   <title>Elemenopy</title>
@@ -8,10 +18,20 @@
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/css?family=Rubik:300,500" rel="stylesheet">
   <link href="css/animate.css" rel="stylesheet">
+  <link rel="icon" href="http://elemenopy.in/.png">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/set.css" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
 
   <!-- Scripts -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.min.js"></script>
@@ -32,13 +52,16 @@
           <li><a style="font-size: 1.2em;" class="green-text" href="contact.html">CONTACT US</a></li>     
         </ul> 
         <ul id="nav-mobile" class="sidenav">
-          <li style="padding-top: 30%;"><a style="font-size: 1.8em;border-top: 5px solid #F37736;" class="orange-text" href="index.html">HOME</a></li>
+          <li style="padding-top: 15%;"><a style="font-size: 1.8em;border-left: 5px solid #F37736;" class="orange-text" href="index.html">HOME</a></li>
           <li><a style="font-size: 1.8em;" class="blue-text" href="about.html">ABOUT US</a></li>
           <li><a style="font-size: 1.8em;" class="yellow-text" href="approach.html">OUR APPROACH</a></li>
           <li><a style="font-size: 1.8em;" class="red-text" href="programs.html">PROGRAMMES</a></li>
           <li><a style="font-size: 1.8em;" class="green-text" href="contact.html">CONTACT US</a></li>
-          <br>
-          <img class="my-seek" src="images/logo.jpg" /> 
+          <div style="position: absolute;bottom: 5%;" class="row">
+            <div class="col s12 center">
+              <img class="my-seek" src="images/logo.jpg" /> 
+            </div>
+          </div>
         </ul>
 
       </div>
@@ -46,45 +69,56 @@
   </div>
   <div class="orange no-padding">
     <div id="carousel" class="carousel-height carousel carousel-slider no-padding">
+      <div class="seek-desktop carousel-fixed-item center middle-indicator">
+         <div class="left">
+          <a style="color: white;" href="Previo" class="movePrevCarousel middle-indicator-text waves-effect waves-light content-indicator"><i class="material-icons left  middle-indicator-text">chevron_left</i></a>
+         </div>
+         
+         <div class="right">
+         <a href="Siguiente" class=" moveNextCarousel middle-indicator-text waves-effect waves-light content-indicator"><i class="material-icons right middle-indicator-text">chevron_right</i></a>
+      </div>
+    </div>
       <div class="row no-padding">
-        <div class="col s12 l6 xl6">
-          <a class="carousel-item no-padding">
-            <img src="images/01.png">
-          </a>
-        </div>
         <div class="col s12 l6 xl6 no-padding">
           <a class="carousel-item no-padding">
-            <img src="images/02.png">
+            <img class="seek-desktop" src="images/02.png">
+            <img class="seek-mob" src="images/02_mob.png">
           </a>
         </div>
         <div class="col s12 l6 xl6 no-padding">
           <a class="carousel-item no-padding">  
-            <img src="images/03.png">
+            <img class="seek-desktop" src="images/03.png">
+            <img class="seek-mob" src="images/03_mob.png">
           </a>
         </div>
         <div class="col s12 l6 xl6 no-padding">
           <a class="carousel-item no-padding">
-            <img src="images/04.png">
+            <img class="seek-desktop" src="images/04.png">
+            <img class="seek-mob" src="images/04_mob.png">
           </a>
         </div>
         <div class="col s12 l6 xl6 no-padding">
           <a class="carousel-item no-padding">
-            <img src="images/05.png">
+            <img class="seek-desktop" src="images/05.png">
+            <img class="seek-mob" src="images/05_mob.png">
           </a>
         </div>
         <div class="col s12 l6 xl6 no-padding">
           <a class="carousel-item no-padding">
-            <img src="images/06.png">
+            <img class="seek-desktop" src="images/06.png">
+            <img class="seek-mob" src="images/06_mob.png">
           </a>
         </div>
         <div class="col s12 l6 xl6 no-padding">
           <a class="carousel-item no-padding">
-            <img src="images/07.png">
+            <img class="seek-desktop" src="images/07.png">
+            <img class="seek-mob" src="images/07_mob.png">
           </a>
         </div>
         <div class="col s12 l6 xl6 no-padding">
           <a class="carousel-item no-padding">
-            <img src="images/08.png">
+            <img class="seek-desktop" src="images/01.png">
+            <img class="seek-mob" src="images/08_mob.png">
           </a>
         </div>
       </div>    
@@ -203,17 +237,17 @@
   
   <div class="container" style="padding: 0% 0 3% 0">
     <div class=" form-header red-text old wow fadeInLeft mikado" style="padding-bottom: 3%;">A PEEK INTO ELEMENOPY</div>
-     <!-- SnapWidget -->
-    
-    <iframe src="https://snapwidget.com/embed/550022" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%; "></iframe>
+    <!-- LightWidget WIDGET -->
+    <iframe src="//lightwidget.com/widgets/fc745d3fb0cc5aaab50bb4c242ab6114.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
+
     <div class="row" style="padding-top: 3%;">
       <div class="col s12 l10 xl10">
         <h6 class="grey-text">We're always doing something fun, here at Elemenopy. </h6>
       </div>
       <div class="col s12 l2 xl2">
-        <a href="https://www.instagram.com/elemenopy.123/"><img style="float: right;" src="images/fb.png"></a>
+        <a target="_blank" href="https://www.facebook.com/elemenopypreschool/"><img style="float: right;" src="images/fb.png"></a>
 
-        <a href="https://www.facebook.com/elemenopypreschool/"><img style="float: right;padding-right:4%;border-right: 2px solid #a7a7a7" src="images/instagram.png"></a>
+        <a target="_blank" href="https://www.instagram.com/elemenopy.123/"><img style="float: right;padding-right:4%;border-right: 2px solid #a7a7a7" src="images/instagram.png"></a>
       </div>
     </div>
   </div>
@@ -232,11 +266,11 @@
                 <div class="col s12 m12 l5 xl5">
                    <div class="input-field">
                     <input style="color:white;border: none;border-bottom:1px  solid white;" required="" id="name" type="text" class="validate" ng-model="p_name" minlength="2">
-                    <label style="color: white;font-weight: 300;" for="name">Guardian's Name</label>
+                    <label style="color: white;font-weight: 300;" for="name">Parent/Guardian's Name</label>
                    </div>
                    <div class="input-field">
-                    <input style="color:white;border: none;border-bottom:1px  solid white;" required="" id="mob" type="number" class="validate" ng-model="mob">
-                    <label style="color: white;font-weight: 300;" for="emailid">Mobile Number</label>
+                    <input style="color:white;border: none;border-bottom:1px  solid white;" required="" id="mob" type="number" class="validate" ng-model="mob" minlength="10">
+                    <label style="color: white;font-weight: 300;" for="mob">Mobile Number</label>
                    </div>
                    <div class="input-field">
                     <input style="color:white;border: none;border-bottom:1px  solid white;" required="" id="emailid" type="email" class="validate" ng-model="email">
@@ -285,7 +319,7 @@
 
 
   <!--  Scripts-->
-<script src="https://snapwidget.com/js/snapwidget.js"></script>
+<script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
 <script src="https://www.gstatic.com/firebasejs/4.10.0/firebase.js"></script>
 <script>
   // Initialize Firebase
@@ -315,11 +349,24 @@
 
     $(document).ready(function(){
       $('.carousel.carousel-slider').carousel({
-        fullWidth : true
+        fullWidth: true,
+        indicators: true
     });
+      $('.moveNextCarousel').click(function(e){
+      e.preventDefault();
+      e.stopPropagation();
+      $('.carousel').carousel('next');
+   });
+
+   // move prev carousel
+   $('.movePrevCarousel').click(function(e){
+      e.preventDefault();
+      e.stopPropagation();
+      $('.carousel').carousel('prev');
+   });
       setInterval(function() {
     $('.carousel').carousel('next');
-  }, 5000);
+  }, 3500);
     });
   </script>
   <script type="text/javascript">
