@@ -16,7 +16,9 @@ angular.module('homeApp', ['ngCookies'])
   	}
  
   	$scope.clicked = function(){
-			console.log($scope.contactForm);
+  			if(($scope.mob + "").length<10){
+  				alert("Please enter a valid 10 digit mobile number")
+  			}
 	  		var form_data = {
 	  			"p_name": $scope.p_name,
 	  			"c_name": $scope.c_name,

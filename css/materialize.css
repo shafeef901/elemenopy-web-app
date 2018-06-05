@@ -4066,7 +4066,7 @@ html, body {
 }
 
 .carousel-height {
-  max-height: 300px;
+  max-height: 250px;
 }
 
 @media only screen and (min-width: 601px) {
@@ -4078,6 +4078,22 @@ html, body {
 @media only screen and (min-width: 993px) {
   . {
     max-height: 600px;
+  }
+}
+
+.carousel-height2 {
+  max-height: 300px;
+}
+
+@media only screen and (min-width: 601px) {
+  .carousel-height2 {
+    max-height: 900px;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  .carousel-height2 {
+    max-height: 900px;
   }
 }
 
@@ -5157,7 +5173,26 @@ nav i.material-icons {
 nav .nav-wrapper {
   font-family: Mikado;
   position: relative;
+  right: 20%;
   height: 100%;
+}
+
+@media only screen and (min-width: 601px) {
+  nav .nav-wrapper {
+    font-family: Mikado;
+    position: relative;
+    left: 0.001%;
+    height: 100%;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  nav .nav-wrapper {
+      font-family: Mikado;
+      position: relative;
+      left: 0.001%;
+      height: 100%;
+  }
 }
 
 @media only screen and (min-width: 993px) {
@@ -5269,20 +5304,54 @@ nav ul a.btn > .material-icons, nav ul a.btn-large > .material-icons, nav ul a.b
 }
 
 nav ul .orange-text:hover {
-  border-top: 5px solid #F37736;
+  border-left: 5px solid #F37736;
+}
+@media only screen and (min-width: 1150px) {
+  nav ul .orange-text:hover {
+    border-top: 5px solid #F37736;
+    border-left: none
+    
+  }
 }
 nav ul .red-text:hover {
-  border-top: 5px solid #F05B65;
+  border-left: 5px solid #F05B65;
+}
+@media only screen and (min-width: 1150px) {
+  nav ul .red-text:hover {
+    
+    border-top: 5px solid #F05B65;
+    border-left: none
+  }
 }
 nav ul .green-text:hover {
-  border-top: 5px solid #6BBE65;
+  border-left: 5px solid #6BBE65;
+}
+@media only screen and (min-width: 1150px) {
+  nav ul .green-text:hover {
+    border-top: 5px solid #6BBE65;
+    border-left: none
+  }
 }
 nav ul .blue-text:hover {
-  border-top: 5px solid #5565AF;
+  border-left: 5px solid #5565AF;
+}
+@media only screen and (min-width: 1150px) {
+  nav ul .blue-text:hover {
+    border-top: 5px solid #5565AF; 
+    border-left: none
+  }
 }
 nav ul .yellow-text:hover {
-  border-top: 5px solid #FFC733;
+  border-left: 5px solid #FFC733;
 }
+@media only screen and (min-width: 1150px) {
+  nav ul .yellow-text:hover {
+    border-top: 5px solid #FFC733;
+    border-left: none
+  }
+}
+
+
 
 nav ul.left {
   float: left;
@@ -5854,7 +5923,7 @@ small {
 
 .about-card3 {
   position: relative;
-  padding: 2% 0% 2% 0%;
+  padding: 2% 0% 0% 0%;
   margin: 0.5rem 0 1rem 0;
   background-color: #fff;
   -webkit-transition: -webkit-box-shadow .25s;
@@ -5867,7 +5936,7 @@ small {
 @media only screen and (min-width: 601px) {
   .about-card3 {
     position: relative;
-  padding: 0% 0% 2% 0%;
+  padding: 0% 0% 0% 0%;
   margin: 0.5rem 0 1rem 0;
   background-color: #fff;
   -webkit-transition: -webkit-box-shadow .25s;
@@ -5881,7 +5950,7 @@ small {
 @media only screen and (min-width: 993px) {
   .about-card3 {
     position: relative;
-  padding: 0% 0% 2% 0%;
+  padding: 0% 0% 0% 0%;
   margin: 0.5rem 0 1rem 0;
   background-color: #fff;
   -webkit-transition: -webkit-box-shadow .25s;
@@ -5921,9 +5990,9 @@ small {
 
 @media only screen and (min-width: 993px) {
   .home-card {
-    position: relative;
+  position: relative;
   padding: 4% 0% 2% 0%;
-  margin: 0.5rem 4rem 0 4rem;
+  margin: 0.5rem 6rem 0 6rem;
   background-color: #fff;
   -webkit-transition: -webkit-box-shadow .25s;
   transition: -webkit-box-shadow .25s;
@@ -8731,7 +8800,7 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
 
 .sidenav {
   position: fixed;
-  width: 300px;
+  width: 282px;
   left: 0;
   top: 0;
   margin: 0;
@@ -10267,3 +10336,19 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
     margin-top: 1.2rem;
   }
 }
+
+@media only screen and (max-width: 1150px){
+      a.sidenav-trigger{
+        display: block !important;
+      }
+
+      .hide-on-med-and-down {
+          display: none !important;
+      }
+
+      nav .brand-logo {
+          left: 50%;
+          -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+      }
+    }
