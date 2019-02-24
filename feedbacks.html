@@ -3,7 +3,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
-  <title>Programs - Elemenopy</title>
+  <title>Feedbacks - Elemenopy</title>
 
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/css?family=Rubik:300,500" rel="stylesheet">
@@ -14,8 +14,16 @@
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.min.js"></script>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular-cookies.min.js"></script> 
   <script type="text/javascript" src="js/feedback.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.8.0/firebase.js"></script>
+  <style type="text/css">
+  	th {
+  		font-size: 1.2em;
+  		background-color: rgba(255,255,255,0.2);
+  	}
+  </style>
 
 </head>
 <body class="red white-text" ng-app="feedbackApp" ng-controller="feedbackController">
@@ -28,16 +36,11 @@
           <th>Email ID</th>
           <th>Child Name</th>
           <th>Child Age</th>
+          <th>Date</th>
         </tr>
       </thead>
-      <tbody>
-        <tr ng-repeat="feed in data">
-          <td>{{feed.p_name}}</td>
-          <td>{{feed.p_name}}</td>
-          <td>{{feed.p_name}}</td>
-          <td>{{feed.p_name}}</td>
-          <td>{{feed.p_name}}</td>
-        </tr>
+      <tbody id="studentData">
+
       </tbody>
     </table>
   </div>
@@ -54,7 +57,7 @@
 
   <!--  Scripts-->
 
-<script src="https://www.gstatic.com/firebasejs/4.10.0/firebase.js"></script>
+
 <script>
   // Initialize Firebase
   var config = {
@@ -65,6 +68,7 @@
     storageBucket: "elemenopy-web.appspot.com",
     messagingSenderId: "776927140068"
   };
+
   firebase.initializeApp(config);
 </script>
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>

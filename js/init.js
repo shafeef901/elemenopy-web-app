@@ -24,15 +24,21 @@ angular.module('homeApp', ['ngCookies'])
 	  			"c_name": $scope.c_name,
 	  			"c_age": $scope.c_age,
 	  			"mob": $scope.mob,
-	  			"email": $scope.email
+				"email": $scope.email,
+				"date": new Date()
 	  		}
-	  		console.log(form_data)
+	  		var d = new Date()
+	  		var date = d.toDateString()
+	  		console.log(date)
+	  		
 	  		dataRef.push({
 	  			p_name: $scope.p_name,
 	  			c_name: $scope.c_name,
 	  			c_age: $scope.c_age,
+	  			date: date,
 	  			mob: $scope.mob,
-	  			email: $scope.email,
+				email: $scope.email,
+				
 	  		});
 
 	  		$scope.p_name="";$scope.c_name="";$scope.c_age="";$scope.mob="";$scope.email="";
